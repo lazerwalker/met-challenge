@@ -11,23 +11,18 @@ class Floor {
     let wings:[Wing]
 
     class func createWithJSONValue(json:JSONValue) -> Floor? {
+        if !json.hasKeys(["name", "wings"]){
+            return nil
+        }
+
         let name = json["name"].string!
         let wingDicts:[JSONValue] = json["wings"].array!
 
-        var hasInvalidWing:Bool = false
-        let possibleWings:[Wing?]! = wingDicts.map {
-            let wing = Wing.createWithJSONValue($0)
-            if let foo = wing {} else {
-                hasInvalidWing = true
-            }
-            return wing
-        }
+        var wings = wingDicts
+            .map { Wing.createWithJSONValue($0) }
+            .filter { !($0 == nil) }
+            .map { $0! }
 
-        if hasInvalidWing {
-            return nil;
-        }
-
-        let wings:[Wing] = possibleWings.map { return $0! }
         return Floor(name:name, wings:wings)
     }
 

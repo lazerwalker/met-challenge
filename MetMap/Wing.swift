@@ -15,7 +15,10 @@ class Wing {
     let color:UIColor
 
     class func createWithJSONValue(json:JSONValue) -> Wing? {
-        // YOLO
+        if !json.hasKeys(["name", "startRoom", "endRoom"]){
+            return nil
+        }
+
         let name = json["name"].string!
         let startRoom = json["startRoom"].integer!
         let endRoom = json["endRoom"].integer!

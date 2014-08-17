@@ -16,6 +16,7 @@
 		A69E7F2F19A1567300B73550 /* Floor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F2D19A1567300B73550 /* Floor.swift */; };
 		A69E7F3019A1567300B73550 /* Wing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F2E19A1567300B73550 /* Wing.swift */; };
 		A69E7F3319A1620E00B73550 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F3219A1620E00B73550 /* SwiftyJSON.swift */; };
+		A69E7F3719A1737500B73550 /* SwiftyJSON+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F3619A1737500B73550 /* SwiftyJSON+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		A69E7F2D19A1567300B73550 /* Floor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Floor.swift; sourceTree = "<group>"; };
 		A69E7F2E19A1567300B73550 /* Wing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wing.swift; sourceTree = "<group>"; };
 		A69E7F3219A1620E00B73550 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Vendor/SwiftyJSON/SwiftyJSON/SwiftyJSON.swift; sourceTree = SOURCE_ROOT; };
+		A69E7F3619A1737500B73550 /* SwiftyJSON+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyJSON+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		A69E7F0419A1471500B73550 /* MetMap */ = {
 			isa = PBXGroup;
 			children = (
+				A69E7F3519A1735C00B73550 /* Extensions */,
 				A69E7F2C19A1566A00B73550 /* Models */,
 				A69E7F0719A1471500B73550 /* AppDelegate.swift */,
 				A69E7F0919A1471500B73550 /* ViewController.swift */,
@@ -136,6 +139,14 @@
 			);
 			name = Vendor;
 			path = MetMap;
+			sourceTree = "<group>";
+		};
+		A69E7F3519A1735C00B73550 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A69E7F3619A1737500B73550 /* SwiftyJSON+Extensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +252,7 @@
 				A69E7F2F19A1567300B73550 /* Floor.swift in Sources */,
 				A69E7F0A19A1471500B73550 /* ViewController.swift in Sources */,
 				A69E7F3019A1567300B73550 /* Wing.swift in Sources */,
+				A69E7F3719A1737500B73550 /* SwiftyJSON+Extensions.swift in Sources */,
 				A69E7F3319A1620E00B73550 /* SwiftyJSON.swift in Sources */,
 				A69E7F0819A1471500B73550 /* AppDelegate.swift in Sources */,
 			);

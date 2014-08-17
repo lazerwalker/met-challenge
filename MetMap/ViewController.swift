@@ -19,10 +19,11 @@ class ViewController: UIViewController {
         let data = NSData.dataWithContentsOfFile(path, options: nil, error: &error)
         let dict = JSONValue(data)
 
-        let floors = dict["floors"].array!
-        for floor in floors {
-            if let f = Floor.createWithJSONValue(floor) {
-                println(f)
+        if let floors = dict["floors"].array {
+            for floor in floors {
+                if let f = Floor.createWithJSONValue(floor) {
+                    println(f)
+                }
             }
         }
     }
