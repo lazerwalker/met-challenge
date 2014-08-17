@@ -12,7 +12,19 @@ class ViewController: UIViewController {
                             
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        var error: NSError?
+
+        let path = NSBundle.mainBundle().pathForResource("data", ofType: "json")
+        let data = NSData.dataWithContentsOfFile(path, options: nil, error: &error)
+        let dict = JSONValue(data)
+
+        let floors = dict["floors"].array!
+        for floor in floors {
+            if let f = Floor.createWithJSONValue(floor) {
+                println(f)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

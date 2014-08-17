@@ -13,6 +13,8 @@
 		A69E7F0F19A1471500B73550 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69E7F0E19A1471500B73550 /* Images.xcassets */; };
 		A69E7F1B19A1471500B73550 /* MetMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F1A19A1471500B73550 /* MetMapTests.swift */; };
 		A69E7F2B19A1565700B73550 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A69E7F2A19A1565700B73550 /* data.json */; };
+		A69E7F2F19A1567300B73550 /* Floor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F2D19A1567300B73550 /* Floor.swift */; };
+		A69E7F3019A1567300B73550 /* Wing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F2E19A1567300B73550 /* Wing.swift */; };
 		A69E7F3319A1620E00B73550 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F3219A1620E00B73550 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		A69E7F1919A1471500B73550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69E7F1A19A1471500B73550 /* MetMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetMapTests.swift; sourceTree = "<group>"; };
 		A69E7F2A19A1565700B73550 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		A69E7F2D19A1567300B73550 /* Floor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Floor.swift; sourceTree = "<group>"; };
+		A69E7F2E19A1567300B73550 /* Wing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wing.swift; sourceTree = "<group>"; };
 		A69E7F3219A1620E00B73550 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Vendor/SwiftyJSON/SwiftyJSON/SwiftyJSON.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,7 @@
 		A69E7F0419A1471500B73550 /* MetMap */ = {
 			isa = PBXGroup;
 			children = (
+				A69E7F2C19A1566A00B73550 /* Models */,
 				A69E7F0719A1471500B73550 /* AppDelegate.swift */,
 				A69E7F0919A1471500B73550 /* ViewController.swift */,
 				A69E7F0B19A1471500B73550 /* Main.storyboard */,
@@ -113,6 +118,15 @@
 				A69E7F1919A1471500B73550 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A69E7F2C19A1566A00B73550 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A69E7F2D19A1567300B73550 /* Floor.swift */,
+				A69E7F2E19A1567300B73550 /* Wing.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		A69E7F3119A1620400B73550 /* Vendor */ = {
@@ -224,7 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A69E7F2F19A1567300B73550 /* Floor.swift in Sources */,
 				A69E7F0A19A1471500B73550 /* ViewController.swift in Sources */,
+				A69E7F3019A1567300B73550 /* Wing.swift in Sources */,
 				A69E7F3319A1620E00B73550 /* SwiftyJSON.swift in Sources */,
 				A69E7F0819A1471500B73550 /* AppDelegate.swift in Sources */,
 			);
