@@ -12,6 +12,7 @@
 		A69E7F0D19A1471500B73550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69E7F0B19A1471500B73550 /* Main.storyboard */; };
 		A69E7F0F19A1471500B73550 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69E7F0E19A1471500B73550 /* Images.xcassets */; };
 		A69E7F1B19A1471500B73550 /* MetMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F1A19A1471500B73550 /* MetMapTests.swift */; };
+		A69E7F2B19A1565700B73550 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A69E7F2A19A1565700B73550 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		A69E7F1419A1471500B73550 /* MetMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69E7F1919A1471500B73550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69E7F1A19A1471500B73550 /* MetMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetMapTests.swift; sourceTree = "<group>"; };
+		A69E7F2A19A1565700B73550 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		A69E7F0519A1471500B73550 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A69E7F2A19A1565700B73550 /* data.json */,
 				A69E7F0619A1471500B73550 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -190,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A69E7F0D19A1471500B73550 /* Main.storyboard in Resources */,
+				A69E7F2B19A1565700B73550 /* data.json in Resources */,
 				A69E7F0F19A1471500B73550 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +399,7 @@
 				A69E7F2019A1471500B73550 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A69E7F2119A1471500B73550 /* Build configuration list for PBXNativeTarget "MetMapTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +408,7 @@
 				A69E7F2319A1471500B73550 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
