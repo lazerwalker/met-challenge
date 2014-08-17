@@ -13,6 +13,7 @@
 		A69E7F0F19A1471500B73550 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69E7F0E19A1471500B73550 /* Images.xcassets */; };
 		A69E7F1B19A1471500B73550 /* MetMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F1A19A1471500B73550 /* MetMapTests.swift */; };
 		A69E7F2B19A1565700B73550 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A69E7F2A19A1565700B73550 /* data.json */; };
+		A69E7F3319A1620E00B73550 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F3219A1620E00B73550 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A69E7F1919A1471500B73550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69E7F1A19A1471500B73550 /* MetMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetMapTests.swift; sourceTree = "<group>"; };
 		A69E7F2A19A1565700B73550 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		A69E7F3219A1620E00B73550 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Vendor/SwiftyJSON/SwiftyJSON/SwiftyJSON.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		A69E7EF919A1471500B73550 = {
 			isa = PBXGroup;
 			children = (
+				A69E7F3119A1620400B73550 /* Vendor */,
 				A69E7F0419A1471500B73550 /* MetMap */,
 				A69E7F1719A1471500B73550 /* MetMapTests */,
 				A69E7F0319A1471500B73550 /* Products */,
@@ -110,6 +113,15 @@
 				A69E7F1919A1471500B73550 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A69E7F3119A1620400B73550 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				A69E7F3219A1620E00B73550 /* SwiftyJSON.swift */,
+			);
+			name = Vendor;
+			path = MetMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A69E7F0A19A1471500B73550 /* ViewController.swift in Sources */,
+				A69E7F3319A1620E00B73550 /* SwiftyJSON.swift in Sources */,
 				A69E7F0819A1471500B73550 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
