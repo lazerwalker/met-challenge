@@ -42,6 +42,7 @@ class ListViewController : UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 80
         tableView.separatorStyle = .None
+        tableView.backgroundColor = UIColor.blackColor()
 
         let cellName = NSStringFromClass(ListCell.self)
         let nib = UINib(nibName:"ListCell", bundle:nil)
@@ -53,16 +54,7 @@ class ListViewController : UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(NSStringFromClass(ListCell.self), forIndexPath:indexPath) as ListCell
 
         let wing = wingForIndexPath(indexPath)
-
-        // TODO: move all of these into the cell, and make RACified
-
-        cell.nameLabel.text = wing.name
-
-        if (wing.completed) {
-            cell.backgroundColor = wing.color.colorWithAlphaComponent(0.3)
-        } else {
-            cell.backgroundColor = wing.color
-        }
+        cell.wing = wing
 
         return cell
     }
