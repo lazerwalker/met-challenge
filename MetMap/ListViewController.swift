@@ -13,13 +13,26 @@ class ListViewController : UITableViewController {
 
     let floors:[Floor]
 
-    required init(coder aDecoder: NSCoder!) {
+    // Because of weird Swift things, calling init() causes this to be called.
+    // Let's do all our initialization here.
+    override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
         var error: NSError?
         let path = NSBundle.mainBundle().pathForResource("data", ofType: "json")
         let data = NSData.dataWithContentsOfFile(path, options: nil, error: &error)
         let dict = JSONValue(data)
         floors = Museum(dict: dict).floors
 
+        super.init(nibName: nibNameOrNil, bundle:nibBundleOrNil)
+    }
+
+    override init() {
+        floors = []
+        super.init(style:.Grouped)
+    }
+
+
+    required init(coder aDecoder: NSCoder!) {
+        floors = []
         super.init(coder:aDecoder)
     }
 
@@ -28,32 +41,27 @@ class ListViewController : UITableViewController {
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 80
-    }
+        tableView.separatorStyle = .None
 
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-
-        // TODO: This shouldn't be necessary.
-        // Currently needed to trigger autosizing on the first screen of cells
-        self.tableView.reloadData()
+        let cellName = NSStringFromClass(ListCell.self)
+        let nib = UINib(nibName:"ListCell", bundle:nil)
+        tableView.registerNib(nib, forCellReuseIdentifier: cellName)
     }
 
     // MARK - UITableViewDelegate
     override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        let cell = tableView.dequeueReusableCellWithIdentifier(NSStringFromClass(ListCell.self), forIndexPath:indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(NSStringFromClass(ListCell.self), forIndexPath:indexPath) as ListCell
 
         let wing = wingForIndexPath(indexPath)
 
         // TODO: move all of these into the cell, and make RACified
 
-        cell.textLabel.text = wing.name
+        cell.nameLabel.text = wing.name
 
         if (wing.completed) {
             cell.backgroundColor = wing.color.colorWithAlphaComponent(0.3)
-            cell.accessoryType = .Checkmark
         } else {
             cell.backgroundColor = wing.color
-            cell.accessoryType = .DisclosureIndicator
         }
 
         return cell
