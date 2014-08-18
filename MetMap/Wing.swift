@@ -14,6 +14,14 @@ class Wing {
     let endRoom:Int
     let color:UIColor
 
+    let userDefaults = NSUserDefaults.standardUserDefaults()
+
+    var completed:Bool {
+        didSet {
+            userDefaults.setBool(completed, forKey: name)
+            userDefaults.synchronize()
+        }
+    }
     class func createWithJSONValue(json:JSONValue) -> Wing? {
         if !json.hasKeys(["name", "startRoom", "endRoom", "color"]){
             return nil
@@ -32,6 +40,7 @@ class Wing {
         self.startRoom = startRoom
         self.endRoom = endRoom
         self.color = color
+        self.completed = userDefaults.boolForKey(name)
     }
 }
 

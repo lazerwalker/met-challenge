@@ -42,12 +42,29 @@ class ListViewController : UITableViewController {
     override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         let cell = tableView.dequeueReusableCellWithIdentifier(NSStringFromClass(ListCell.self), forIndexPath:indexPath) as UITableViewCell
 
-        let wing = floors[indexPath.section].wings[indexPath.row]
+        let wing = wingForIndexPath(indexPath)
 
-        cell.backgroundColor = wing.color
+        // TODO: move all of these into the cell, and make RACified
+
         cell.textLabel.text = wing.name
 
+        if (wing.completed) {
+            cell.backgroundColor = wing.color.colorWithAlphaComponent(0.3)
+            cell.accessoryType = .Checkmark
+        } else {
+            cell.backgroundColor = wing.color
+            cell.accessoryType = .DisclosureIndicator
+        }
+
         return cell
+    }
+
+    override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+
+        let wing = wingForIndexPath(indexPath)
+        wing.completed = !wing.completed
+
+        tableView.reloadData()
     }
 
     // MARK - UITableViewDataSource
@@ -61,5 +78,10 @@ class ListViewController : UITableViewController {
 
     override func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String! {
         return floors[section].name
+    }
+
+    // MARK - Private
+    func wingForIndexPath(indexPath:NSIndexPath) -> Wing {
+        return floors[indexPath.section].wings[indexPath.row]
     }
 }
