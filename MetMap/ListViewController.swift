@@ -23,20 +23,30 @@ class ListViewController : UITableViewController {
         super.init(coder:aDecoder)
     }
 
-    override func awakeFromNib() {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 80
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
+        // TODO: This shouldn't be necessary.
+        // Currently needed to trigger autosizing on the first screen of cells
+        self.tableView.reloadData()
     }
 
     // MARK - UITableViewDelegate
     override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        let cell = tableView.dequeueReusableCellWithIdentifier(NSStringFromClass(ListCell.self), forIndexPath:indexPath) as ListCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(NSStringFromClass(ListCell.self), forIndexPath:indexPath) as UITableViewCell
 
         let wing = floors[indexPath.section].wings[indexPath.row]
 
         cell.backgroundColor = wing.color
-        cell.nameLabel.text = wing.name
-        cell.setNeedsUpdateConstraints()
-        cell.updateConstraintsIfNeeded()
+        cell.textLabel.text = wing.name
+
         return cell
     }
 

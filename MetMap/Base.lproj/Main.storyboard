@@ -2,43 +2,30 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="l33-rl-YFA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
-        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--List View Controller-->
+        <!--Wings-->
         <scene sceneID="Urg-KX-tzm">
             <objects>
-                <tableViewController id="l33-rl-YFA" customClass="ListViewController" customModule="MetMap" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Wings" id="l33-rl-YFA" customClass="ListViewController" customModule="MetMap" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="80" sectionHeaderHeight="10" sectionFooterHeight="10" id="fbr-bR-NnF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MetMap.ListCell" rowHeight="80" id="YHY-ez-r4u" customClass="ListCell" customModule="MetMap" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MetMap.ListCell" textLabel="FIK-UQ-6TL" rowHeight="80" style="IBUITableViewCellStyleDefault" id="YHY-ez-r4u" customClass="ListCell" customModule="MetMap" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YHY-ez-r4u" id="DHD-Fq-v4f">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Wing Name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="400" translatesAutoresizingMaskIntoConstraints="NO" id="ZaY-E3-a8W">
-                                            <rect key="frame" x="8" y="8" width="584" height="64"/>
-                                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="45"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="770" id="FIK-UQ-6TL">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.85999999999999999" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
-                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
-                                            </variation>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="ZaY-E3-a8W" firstAttribute="trailing" secondItem="DHD-Fq-v4f" secondAttribute="trailingMargin" id="7RD-fv-OyC"/>
-                                        <constraint firstItem="ZaY-E3-a8W" firstAttribute="leading" secondItem="DHD-Fq-v4f" secondAttribute="leadingMargin" id="FFH-5s-iLi"/>
-                                        <constraint firstItem="ZaY-E3-a8W" firstAttribute="bottom" secondItem="DHD-Fq-v4f" secondAttribute="bottomMargin" id="hzh-8W-jhG"/>
-                                        <constraint firstItem="ZaY-E3-a8W" firstAttribute="top" secondItem="DHD-Fq-v4f" secondAttribute="topMargin" id="n3x-ab-ObX"/>
-                                    </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="nameLabel" destination="ZaY-E3-a8W" id="6g9-5s-r6z"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

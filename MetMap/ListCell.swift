@@ -9,8 +9,6 @@
 import UIKit
 
 class ListCell : UITableViewCell {
-    @IBOutlet weak var nameLabel: UILabel!
-
     required init(coder aDecoder: NSCoder!) {
         super.init(coder: aDecoder)
     }
