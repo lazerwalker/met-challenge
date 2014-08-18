@@ -18,6 +18,7 @@
 		A69E7F3319A1620E00B73550 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F3219A1620E00B73550 /* SwiftyJSON.swift */; };
 		A69E7F3719A1737500B73550 /* SwiftyJSON+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F3619A1737500B73550 /* SwiftyJSON+Extensions.swift */; };
 		A69E7F3919A1B05E00B73550 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F3819A1B05E00B73550 /* UIColor+Extensions.swift */; };
+		A69E7F3B19A223A300B73550 /* Museum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F3A19A223A300B73550 /* Museum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		A69E7F3219A1620E00B73550 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Vendor/SwiftyJSON/SwiftyJSON/SwiftyJSON.swift; sourceTree = SOURCE_ROOT; };
 		A69E7F3619A1737500B73550 /* SwiftyJSON+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyJSON+Extensions.swift"; sourceTree = "<group>"; };
 		A69E7F3819A1B05E00B73550 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		A69E7F3A19A223A300B73550 /* Museum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Museum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				A69E7F2D19A1567300B73550 /* Floor.swift */,
 				A69E7F2E19A1567300B73550 /* Wing.swift */,
+				A69E7F3A19A223A300B73550 /* Museum.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				A69E7F2F19A1567300B73550 /* Floor.swift in Sources */,
 				A69E7F0A19A1471500B73550 /* ViewController.swift in Sources */,
 				A69E7F3019A1567300B73550 /* Wing.swift in Sources */,
+				A69E7F3B19A223A300B73550 /* Museum.swift in Sources */,
 				A69E7F3719A1737500B73550 /* SwiftyJSON+Extensions.swift in Sources */,
 				A69E7F3919A1B05E00B73550 /* UIColor+Extensions.swift in Sources */,
 				A69E7F3319A1620E00B73550 /* SwiftyJSON.swift in Sources */,
