@@ -38,7 +38,7 @@ class ListViewController : UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 80
         tableView.separatorStyle = .None
@@ -47,6 +47,11 @@ class ListViewController : UITableViewController {
         let cellName = NSStringFromClass(ListCell.self)
         let nib = UINib(nibName:"ListCell", bundle:nil)
         tableView.registerNib(nib, forCellReuseIdentifier: cellName)
+    }
+
+    // MARK - 
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
     }
 
     // MARK - UITableViewDelegate
@@ -60,11 +65,6 @@ class ListViewController : UITableViewController {
     }
 
     override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-
-        let wing = wingForIndexPath(indexPath)
-        wing.completed = !wing.completed
-
-        tableView.reloadData()
     }
 
     // MARK - UITableViewDataSource
