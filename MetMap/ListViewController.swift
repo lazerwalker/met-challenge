@@ -24,20 +24,20 @@ class ListViewController : UITableViewController {
     }
 
     override func awakeFromNib() {
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     // MARK - UITableViewDelegate
     override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        let cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier, forIndexPath: indexPath) as UITableViewCell
-        return cell
-    }
+        let cell = tableView.dequeueReusableCellWithIdentifier(NSStringFromClass(ListCell.self), forIndexPath:indexPath) as ListCell
 
-    override func tableView(tableView: UITableView!, willDisplayCell cell: UITableViewCell!, forRowAtIndexPath indexPath: NSIndexPath!) {
         let wing = floors[indexPath.section].wings[indexPath.row]
+
         cell.backgroundColor = wing.color
-        cell.textLabel.text = wing.name
-//        cell.detailTextLabel.text = "\(wing.startRoom) - \(wing.endRoom)"
+        cell.nameLabel.text = wing.name
+        cell.setNeedsUpdateConstraints()
+        cell.updateConstraintsIfNeeded()
+        return cell
     }
 
     // MARK - UITableViewDataSource
