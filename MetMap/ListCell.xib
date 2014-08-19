@@ -13,31 +13,37 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A9V-FM-d4y" id="2Nd-Kb-hQA">
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="252" translatesAutoresizingMaskIntoConstraints="NO" id="XVW-eo-Whx">
-                        <rect key="frame" x="8" y="-1" width="252" height="83"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="246" translatesAutoresizingMaskIntoConstraints="NO" id="XVW-eo-Whx">
+                        <rect key="frame" x="8" y="18" width="246" height="43"/>
                         <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="checkmark" highlightedImage="checkmark-selected" translatesAutoresizingMaskIntoConstraints="NO" id="kD7-zO-Pwe">
-                        <rect key="frame" x="268" y="18" width="44" height="44"/>
+                    <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" highlightedImage="checkmark-selected" translatesAutoresizingMaskIntoConstraints="NO" id="kD7-zO-Pwe">
+                        <rect key="frame" x="262" y="0.0" width="50" height="79"/>
                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Xjy-ei-Ijd"/>
+                        </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="centerY" secondItem="kD7-zO-Pwe" secondAttribute="centerY" id="4Uw-7A-gCM"/>
                     <constraint firstItem="kD7-zO-Pwe" firstAttribute="leading" secondItem="XVW-eo-Whx" secondAttribute="trailing" constant="8" id="EsM-MY-qpL"/>
+                    <constraint firstAttribute="bottom" secondItem="kD7-zO-Pwe" secondAttribute="bottom" id="auw-Ze-TgS"/>
                     <constraint firstAttribute="bottomMargin" secondItem="XVW-eo-Whx" secondAttribute="bottom" priority="750" constant="10" id="eAO-tt-vtG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kD7-zO-Pwe" secondAttribute="trailing" id="jAD-j7-dle"/>
                     <constraint firstItem="XVW-eo-Whx" firstAttribute="top" secondItem="2Nd-Kb-hQA" secondAttribute="topMargin" priority="750" constant="10" id="qgF-Rl-BYr"/>
                     <constraint firstItem="XVW-eo-Whx" firstAttribute="leading" secondItem="2Nd-Kb-hQA" secondAttribute="leadingMargin" id="sO4-ek-jIB"/>
                     <constraint firstItem="kD7-zO-Pwe" firstAttribute="trailing" secondItem="2Nd-Kb-hQA" secondAttribute="trailingMargin" id="zua-7F-uDf"/>
+                    <constraint firstItem="kD7-zO-Pwe" firstAttribute="top" secondItem="2Nd-Kb-hQA" secondAttribute="top" id="zyl-4F-gBB"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="checkmark" destination="kD7-zO-Pwe" id="Ria-Mk-gik"/>
                 <outlet property="nameLabel" destination="XVW-eo-Whx" id="aHd-LL-vCX"/>
             </connections>
-            <point key="canvasLocation" x="442" y="184.5"/>
+            <point key="canvasLocation" x="442" y="180"/>
         </tableViewCell>
     </objects>
     <resources>
