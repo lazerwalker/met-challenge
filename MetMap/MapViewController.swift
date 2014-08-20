@@ -20,7 +20,7 @@ class MapViewController : UIViewController, UIScrollViewDelegate {
     var floor : MapFloor = .One
     var focusedWing : Wing?
 
-    let InitialMapScale : CGFloat = 0.2
+    let InitialMapScale : CGFloat = 0.1
 
     // MARK - Constructors
     init(floor: MapFloor) {
@@ -51,10 +51,11 @@ class MapViewController : UIViewController, UIScrollViewDelegate {
         scrollView.backgroundColor = UIColor.whiteColor()
 
         scrollView.minimumZoomScale = 0.1
+        scrollView.maximumZoomScale = 0.5
         scrollView.zoomScale = scrollView.minimumZoomScale
         view.addSubview(scrollView)
 
-        let doubleTap = UITapGestureRecognizer(target: self, action: "didDoubleTap")
+        let doubleTap = UITapGestureRecognizer(target: self, action: "didDoubleTap:")
         doubleTap.numberOfTapsRequired = 2
         scrollView.addGestureRecognizer(doubleTap)
     }
@@ -69,8 +70,8 @@ class MapViewController : UIViewController, UIScrollViewDelegate {
 
         if let wing = focusedWing {
             var rect = wing.mapRect
-            rect.origin.x *= 0.9
-            rect.origin.y *= 0.9
+            rect.origin.x -= (rect.size.width * 0.1)
+            rect.origin.y -= (rect.size.height * 0.1)
             rect.size.width *= 1.2
             rect.size.height *= 1.2
             scrollView.zoomToRect(rect, animated: true)
@@ -83,11 +84,11 @@ class MapViewController : UIViewController, UIScrollViewDelegate {
         return imageView
     }
 
-    func didDoubleTap() {
-        if scrollView.zoomScale > scrollView.maximumZoomScale {
-            scrollView.setZoomScale(scrollView.maximumZoomScale, animated: true)
-        } else {
+    func didDoubleTap(sender: UITapGestureRecognizer) {
+        if scrollView.zoomScale > InitialMapScale {
             scrollView.setZoomScale(InitialMapScale, animated: true)
+        } else {
+            scrollView.setZoomScale(0.3, animated: true)
         }
     }
 }
