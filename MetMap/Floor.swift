@@ -21,7 +21,7 @@ class Floor {
         let wingDicts:[JSONValue] = json["wings"].array!
 
         var wings = wingDicts
-            .map { Wing.createWithJSONValue($0) }
+            .map { Wing.createWithJSONValue($0, floor:map) }
             .filter { !($0 == nil) }
             .map { $0! }
 
