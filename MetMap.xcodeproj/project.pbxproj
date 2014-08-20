@@ -11,6 +11,7 @@
 		A61B315219A396DD009CDB4C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61B315119A396DD009CDB4C /* MapViewController.swift */; };
 		A638890619A5391B00436A66 /* ListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A638890519A5391B00436A66 /* ListHeaderView.xib */; };
 		A638890819A539BB00436A66 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638890719A539BB00436A66 /* ListHeaderView.swift */; };
+		A638892D19A54CBF00436A66 /* ExSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A638892419A54C6700436A66 /* ExSwift.framework */; };
 		A653533419A2AA31005082F0 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A653533319A2AA31005082F0 /* ListCell.xib */; };
 		A69E7F0819A1471500B73550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F0719A1471500B73550 /* AppDelegate.swift */; };
 		A69E7F0F19A1471500B73550 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69E7F0E19A1471500B73550 /* Images.xcassets */; };
@@ -27,6 +28,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A638892319A54C6700436A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A638891C19A54C6700436A66 /* ExSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1E11AF841943222D006BCE48;
+			remoteInfo = ExSwift;
+		};
+		A638892519A54C6700436A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A638891C19A54C6700436A66 /* ExSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1E11AF8F1943222D006BCE48;
+			remoteInfo = ExSwiftTests;
+		};
+		A638892719A54C6700436A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A638891C19A54C6700436A66 /* ExSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E8CE8EB194ECF2A008B9919;
+			remoteInfo = "ExSwift-iOS";
+		};
+		A638892919A54C6700436A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A638891C19A54C6700436A66 /* ExSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2EC02FBD194ED0D500619CB5;
+			remoteInfo = "ExSwift-iOS Tests";
+		};
+		A638892B19A54CBB00436A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A638891C19A54C6700436A66 /* ExSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E8CE8EA194ECF29008B9919;
+			remoteInfo = "ExSwift-iOS";
+		};
 		A69E7F1519A1471500B73550 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A69E7EFA19A1471500B73550 /* Project object */;
@@ -41,6 +77,7 @@
 		A61B315119A396DD009CDB4C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A638890519A5391B00436A66 /* ListHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListHeaderView.xib; sourceTree = "<group>"; };
 		A638890719A539BB00436A66 /* ListHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
+		A638891C19A54C6700436A66 /* ExSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ExSwift.xcodeproj; path = Vendor/ExSwift/ExSwift.xcodeproj; sourceTree = SOURCE_ROOT; };
 		A653533319A2AA31005082F0 /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
 		A69E7F0219A1471500B73550 /* MetMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69E7F0619A1471500B73550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A638892D19A54CBF00436A66 /* ExSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +116,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A638891D19A54C6700436A66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A638892419A54C6700436A66 /* ExSwift.framework */,
+				A638892619A54C6700436A66 /* ExSwiftTests.xctest */,
+				A638892819A54C6700436A66 /* ExSwift.framework */,
+				A638892A19A54C6700436A66 /* ExSwift-iOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A69E7EF919A1471500B73550 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +200,7 @@
 		A69E7F3119A1620400B73550 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				A638891C19A54C6700436A66 /* ExSwift.xcodeproj */,
 				A69E7F3219A1620E00B73550 /* SwiftyJSON.swift */,
 			);
 			name = Vendor;
@@ -200,6 +250,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A638892C19A54CBB00436A66 /* PBXTargetDependency */,
 			);
 			name = MetMap;
 			productName = MetMap;
@@ -253,6 +304,12 @@
 			mainGroup = A69E7EF919A1471500B73550;
 			productRefGroup = A69E7F0319A1471500B73550 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A638891D19A54C6700436A66 /* Products */;
+					ProjectRef = A638891C19A54C6700436A66 /* ExSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A69E7F0119A1471500B73550 /* MetMap */,
@@ -260,6 +317,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A638892419A54C6700436A66 /* ExSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ExSwift.framework;
+			remoteRef = A638892319A54C6700436A66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A638892619A54C6700436A66 /* ExSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ExSwiftTests.xctest;
+			remoteRef = A638892519A54C6700436A66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A638892819A54C6700436A66 /* ExSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ExSwift.framework;
+			remoteRef = A638892719A54C6700436A66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A638892A19A54C6700436A66 /* ExSwift-iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ExSwift-iOS Tests.xctest";
+			remoteRef = A638892919A54C6700436A66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A69E7F0019A1471500B73550 /* Resources */ = {
@@ -313,6 +401,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A638892C19A54CBB00436A66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ExSwift-iOS";
+			targetProxy = A638892B19A54CBB00436A66 /* PBXContainerItemProxy */;
+		};
 		A69E7F1619A1471500B73550 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A69E7F0119A1471500B73550 /* MetMap */;
