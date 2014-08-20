@@ -22,61 +22,81 @@
           "name": "The American Wing",
           "startRoom": 700,
           "endRoom": 774,
-          "color": "#3483AA"
+          "color": "#3483AA",
+          "origin": [2660, 20],
+          "size": [1240, 1105]
         },
         {
           "name": "Arts of Africa, Oceania, and the Americas",
           "startRoom": 350,
           "endRoom": 359,
-          "color": "#84BBA6"
+          "color": "#84BBA6",
+          "origin": [520, 1080],
+          "size": [715, 685]
         },
         {
           "name": "Arms and Armor",
           "startRoom": 370,
           "endRoom": 370,
-          "color": "#95433D"
+          "color": "#95433D",
+          "origin": [2680, 1130],
+          "size": [575, 380]
         },
         {
           "name": "The Costume Institute",
           "startRoom": 980,
           "endRoom": 981,
-          "color": "#AD5A84"
+          "color": "#AD5A84",
+          "origin": [2200, 2710],
+          "size": [600, 500]
         },
         {
           "name": "Egyptian Art",
           "startRoom": 100,
           "endRoom": 138,
-          "color": "#CD7B4B"
+          "color": "#CD7B4B",
+          "origin": [2450, 1100],
+          "size": [1310, 1160]
         },
         {
           "name": "European Sculture and Decorative Arts",
           "startRoom": 500,
           "endRoom": 556,
-          "color": "#706277"
+          "color": "#706277",
+          "origin": [1200, 680],
+          "size": [1500, 1050]
         },
         {
           "name": "Greek and Roman Art",
           "startRoom": 150,
           "endRoom": 172,
-          "color": "#8EAA5E"
+          "color": "#8EAA5E",
+          "origin": [390, 1770],
+          "size": [1440, 640]
         },
         {
           "name": "Medieval Art",
           "startRoom": 300,
           "endRoom": 307,
-          "color": "#7C7C71"
+          "color": "#7C7C71",
+          "origin": [1990, 890],
+          "size": [700, 900]
         },
         {
           "name": "Modern and Contemporary Art",
           "startRoom": 900,
           "endRoom": 926,
-          "color": "#908070"
+          "color": "#908070",
+          "origin": [585, 185],
+          "size": [630, 905]
         },
         {
           "name": "Robert Lehman Collection",
           "startRoom": 950,
           "endRoom": 965,
-          "color": "#2D6879"
+          "color": "#2D6879",
+          "origin": [1830, 0],
+          "size": [1130, 785]
         }
       ]
     },
@@ -88,67 +108,89 @@
           "name": "The American Wing",
           "startRoom": 703,
           "endRoom": 772,
-          "color": "#3483AA"
+          "color": "#3483AA",
+          "origin": [2150, 375],
+          "size": [1290, 680]
         },
         {
           "name": "Ancient Near Eastern Art",
           "startRoom": 400,
           "endRoom": 406,
-          "color": "#B8A085"
+          "color": "#B8A085",
+          "origin": [700, 1650],
+          "size": [600, 400]
         },
         {
           "name": "Art of the Arab Lands, Turkey, Iran, Central asia, and Later South Asia",
           "startRoom": 450,
           "endRoom": 464,
-          "color": "#4EA19F"
+          "color": "#4EA19F",
+          "origin": [60, 1650],
+          "size": [650, 490]
         },
         {
           "name": "Asian Art",
           "startRoom": 200,
           "endRoom": 253,
-          "color": "#CB7D81"
+          "color": "#CB7D81",
+          "origin": [1280, 1060],
+          "size": [2150, 1350]
         },
         {
           "name": "Drawings and Prints",
           "startRoom": 690,
           "endRoom": 693,
-          "color": "#5D8690"
+          "color": "#5D8690",
+          "origin": [1150, 1350],
+          "size": [400, 100]
         },
         {
           "name": "European Paintings, 1250-1800",
           "startRoom": 600,
           "endRoom": 644,
-          "color": "#AA755A"
+          "color": "#AA755A",
+          "origin": [1070, 630],
+          "size": [1100, 750]
         },
         {
           "name": "Greek and Roman Art",
           "startRoom": 173,
           "endRoom": 176,
-          "color": "#8EAA5E"
+          "color": "#8EAA5E",
+          "origin": [600, 1700],
+          "size": [425, 225]
         },
         {
           "name": "Modern and Contemporary Art",
           "startRoom": 917,
           "endRoom": 925,
-          "color": "#908070"
+          "color": "#908070",
+          "origin": [120, 375],
+          "size": [600, 675]
         },
         {
           "name": "Musical Intruments",
           "startRoom": 680,
           "endRoom": 684,
-          "color": "#797D89"
+          "color": "#797D89",
+          "origin": [2150, 1050],
+          "size": [530, 400]
         },
         {
           "name": "19th- and Early 20th-Century European Paintings and Sculpture",
           "startRoom": 800,
           "endRoom": 830,
-          "color": "#9881AA"
+          "color": "#9881AA",
+          "origin": [125, 1040],
+          "size": [550, 650]
         },
         {
           "name": "Photographs",
           "startRoom": 800,
           "endRoom": 852,
-          "color": "#8D9D7B"
+          "color": "#8D9D7B",
+          "origin": [660, 1260],
+          "size": [550, 400]
         }
       ]
     }
