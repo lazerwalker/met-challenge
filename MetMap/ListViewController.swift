@@ -23,6 +23,8 @@ class ListViewController : UITableViewController {
         floors = Museum(dict: dict).floors
 
         super.init(nibName: nibNameOrNil, bundle:nibBundleOrNil)
+
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
     }
 
     override init() {

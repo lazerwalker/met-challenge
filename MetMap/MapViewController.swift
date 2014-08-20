@@ -18,6 +18,7 @@ class MapViewController : UIViewController, UIScrollViewDelegate {
     let scrollView = UIScrollView()
 
     var floor : MapFloor = .One
+
     var focusedWing : Wing?
 
     let InitialMapScale : CGFloat = 0.1
@@ -63,6 +64,18 @@ class MapViewController : UIViewController, UIScrollViewDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationController.navigationBarHidden = false
+
+        if let wing = focusedWing {
+            navigationController.navigationBar.tintColor = wing.color
+
+            let titleView = UILabel()
+            titleView.text = wing.name
+            titleView.sizeToFit()
+            titleView.font = UIFont(name: "Optima-Bold", size: 20)
+            titleView.textColor = wing.color
+            titleView.adjustsFontSizeToFitWidth = true
+            navigationItem.titleView = titleView
+        }
     }
 
     override func viewDidAppear(animated: Bool) {
