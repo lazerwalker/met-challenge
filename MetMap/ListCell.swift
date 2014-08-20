@@ -12,6 +12,8 @@ class ListCell : UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var checkmark: UIImageView!
 
+    var didChangeBlock: ((Wing?)->())?
+
     var wing:Wing? {
         didSet {
             nameLabel.text = wing?.name
@@ -64,6 +66,10 @@ class ListCell : UITableViewCell {
             let tempWing = wing
             tempWing?.completed = true
             wing = tempWing
+
+            if let block = didChangeBlock {
+                block(wing)
+            }
         }
     }
 
@@ -72,6 +78,10 @@ class ListCell : UITableViewCell {
             let tempWing = wing
             tempWing?.completed = false
             wing = tempWing
+
+            if let block = didChangeBlock {
+                block(wing)
+            }
         }
     }
 
@@ -79,5 +89,9 @@ class ListCell : UITableViewCell {
         let tempWing = wing
         tempWing?.completed = !(tempWing!.completed)
         wing = tempWing
+
+        if let block = didChangeBlock {
+            block(wing)
+        }
     }
 }

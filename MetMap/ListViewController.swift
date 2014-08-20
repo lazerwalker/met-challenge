@@ -72,6 +72,7 @@ class ListViewController : UITableViewController {
 
         let wing = wingForIndexPath(indexPath)
         cell.wing = wing
+        cell.didChangeBlock = { (_) in self.updatePercentage() }
 
         return cell
     }
