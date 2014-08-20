@@ -18,6 +18,7 @@ class MapViewController : UIViewController, UIScrollViewDelegate {
     let scrollView = UIScrollView()
 
     var floor : MapFloor = .One
+    var focusedWing : Wing?
 
     let InitialMapScale : CGFloat = 0.2
 
@@ -50,7 +51,7 @@ class MapViewController : UIViewController, UIScrollViewDelegate {
         scrollView.backgroundColor = UIColor.whiteColor()
 
         scrollView.minimumZoomScale = 0.1
-        scrollView.zoomScale = InitialMapScale
+        scrollView.zoomScale = scrollView.minimumZoomScale
         view.addSubview(scrollView)
 
         let doubleTap = UITapGestureRecognizer(target: self, action: "didDoubleTap")
@@ -61,6 +62,20 @@ class MapViewController : UIViewController, UIScrollViewDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationController.navigationBarHidden = false
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
+        if let wing = focusedWing {
+            var rect = wing.mapRect
+            rect.origin.x *= 0.9
+            rect.origin.y *= 0.9
+            rect.size.width *= 1.2
+            rect.size.height *= 1.2
+            scrollView.zoomToRect(rect, animated: true)
+        }
+
     }
 
     //MARK - UIScrollViewDelegate

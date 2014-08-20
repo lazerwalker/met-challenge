@@ -10,9 +10,12 @@ import UIKit
 
 class Wing {
     let name:String
+    let color:UIColor
+
     let startRoom:Int
     let endRoom:Int
-    let color:UIColor
+
+    let mapRect:CGRect
 
     let userDefaults = NSUserDefaults.standardUserDefaults()
 
@@ -23,23 +26,29 @@ class Wing {
         }
     }
     class func createWithJSONValue(json:JSONValue) -> Wing? {
-        if !json.hasKeys(["name", "startRoom", "endRoom", "color"]){
+        if !json.hasKeys(["name", "startRoom", "endRoom", "color", "size", "origin"]){
             return nil
         }
 
         let name = json["name"].string!
         let startRoom = json["startRoom"].integer!
         let endRoom = json["endRoom"].integer!
+
         let color = UIColor(hex: json["color"].string!)
 
-        return Wing(name: name, startRoom: startRoom, endRoom: endRoom, color: color)
+        let origin = CGPoint(x: json["origin"][0].integer!, y: json["origin"][1].integer!)
+        let size = CGSize(width: json["size"][0].integer!, height: json["size"][1].integer!)
+        let rect = CGRect(origin: origin, size: size)
+
+        return Wing(name: name, startRoom: startRoom, endRoom: endRoom, color: color, mapRect: rect)
     }
 
-    init(name:String, startRoom:Int, endRoom:Int, color:UIColor) {
+    init(name:String, startRoom:Int, endRoom:Int, color:UIColor, mapRect:CGRect) {
         self.name = name
         self.startRoom = startRoom
         self.endRoom = endRoom
         self.color = color
+        self.mapRect = mapRect
         self.completed = userDefaults.boolForKey(name)
     }
 }

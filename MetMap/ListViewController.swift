@@ -70,7 +70,10 @@ class ListViewController : UITableViewController {
 
     override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
         let floor = floors[indexPath.section]
+        let wing = wingForIndexPath(indexPath)
+
         let mapController = MapViewController(floor: floor.map)
+        mapController.focusedWing = wing
         navigationController.pushViewController(mapController, animated: true)
     }
 
