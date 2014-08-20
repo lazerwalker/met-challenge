@@ -71,9 +71,13 @@ class MapViewController : UIViewController, UIScrollViewDelegate {
             let titleView = UILabel()
             titleView.text = wing.name
             titleView.sizeToFit()
-            titleView.font = UIFont(name: "Optima-Bold", size: 20)
-            titleView.textColor = wing.color
+            titleView.frame.size.height = 30.0
+
             titleView.adjustsFontSizeToFitWidth = true
+            titleView.font = UIFont(name: "Optima-Bold", size: 20)
+            titleView.numberOfLines = 0
+            titleView.textAlignment = .Center
+            titleView.textColor = wing.color
             navigationItem.titleView = titleView
         }
     }
