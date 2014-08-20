@@ -11,7 +11,9 @@ import UIKit
 class ListViewController : UITableViewController {
     let CellIdentifier = "Cell"
 
-    let floors:[Floor]
+    let floors:[Floor] = []
+
+    let headerView:ListHeaderView = ListHeaderView.loadFromNib()
 
     // Because of weird Swift things, calling init() causes this to be called.
     // Let's do all our initialization here.
@@ -28,13 +30,11 @@ class ListViewController : UITableViewController {
     }
 
     override init() {
-        floors = []
         super.init(style:.Grouped)
     }
 
 
     required init(coder aDecoder: NSCoder!) {
-        floors = []
         super.init(coder:aDecoder)
     }
 
@@ -44,7 +44,10 @@ class ListViewController : UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 80
         tableView.separatorStyle = .None
-        tableView.backgroundColor = UIColor.blackColor()
+        tableView.backgroundColor = UIColor.groupTableViewBackgroundColor()
+
+        tableView.contentInset = UIEdgeInsetsMake(-20, 0, 0, 0)
+        tableView.tableHeaderView = ListHeaderView.loadFromNib()
 
         let cellName = NSStringFromClass(ListCell.self)
         let nib = UINib(nibName:"ListCell", bundle:nil)

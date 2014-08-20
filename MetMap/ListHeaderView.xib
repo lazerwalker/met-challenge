@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ListHeaderView" customModule="MetMap" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="You've seen 70% of the Met." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pff-Aw-nE5">
+                    <rect key="frame" x="15" y="65" width="297" height="32"/>
+                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="23"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHu-6S-wxB">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.58999999999999997" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="TR3-Hd-ic3"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="WHAT ARE YOU WAITING FOR?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fo-2F-9xo">
+                    <rect key="frame" x="15" y="91" width="193" height="14"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="iHu-6S-wxB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8rT-HQ-taU"/>
+                <constraint firstItem="iHu-6S-wxB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="B6R-Uj-Nau"/>
+                <constraint firstAttribute="trailing" secondItem="Pff-Aw-nE5" secondAttribute="trailing" constant="8" id="JPu-AD-4aY"/>
+                <constraint firstItem="Pff-Aw-nE5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="QEh-1o-YC4"/>
+                <constraint firstItem="Pff-Aw-nE5" firstAttribute="leading" secondItem="4fo-2F-9xo" secondAttribute="leading" id="RuA-y0-fKc"/>
+                <constraint firstAttribute="bottom" secondItem="4fo-2F-9xo" secondAttribute="bottom" id="Xcf-FG-eri"/>
+                <constraint firstItem="4fo-2F-9xo" firstAttribute="top" secondItem="Pff-Aw-nE5" secondAttribute="bottom" constant="-5" id="hu1-da-lQf"/>
+                <constraint firstItem="Pff-Aw-nE5" firstAttribute="top" secondItem="iHu-6S-wxB" secondAttribute="bottom" constant="45" id="kiw-7A-Iuv"/>
+                <constraint firstAttribute="bottom" secondItem="Pff-Aw-nE5" secondAttribute="bottom" constant="20" symbolic="YES" id="lqZ-cS-B4q"/>
+                <constraint firstAttribute="trailing" secondItem="iHu-6S-wxB" secondAttribute="trailing" id="xH7-4n-NFs"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="lqZ-cS-B4q"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="flavorLabel" destination="4fo-2F-9xo" id="u9C-qI-s3L"/>
+                <outlet property="percentageLabel" destination="Pff-Aw-nE5" id="olq-ro-4oU"/>
+            </connections>
+            <point key="canvasLocation" x="472" y="89"/>
+        </view>
+    </objects>
+</document>

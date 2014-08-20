@@ -19,13 +19,13 @@ class ListCell : UITableViewCell {
             if (wing?.completed == true) {
                 backgroundColor = wing?.color.colorWithAlphaComponent(0.2)
                 checkmark.highlighted = true
-                checkmark.tintColor = UIColor.greenColor().colorWithAlphaComponent(0.5)
-                nameLabel.textColor = UIColor.whiteColor().colorWithAlphaComponent(0.4)
+                checkmark.tintColor = UIColor(hex: "#007502").colorWithAlphaComponent(0.2)
+                nameLabel.textColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
             } else {
                 backgroundColor = wing?.color
                 checkmark.highlighted = false
-                checkmark.tintColor = UIColor.blackColor().colorWithAlphaComponent(0.8)
-                nameLabel.textColor = UIColor.blackColor().colorWithAlphaComponent(0.8)
+                checkmark.tintColor = UIColor.blackColor().colorWithAlphaComponent(0.7)
+                nameLabel.textColor = UIColor.blackColor().colorWithAlphaComponent(0.7)
             }
         }
     }
