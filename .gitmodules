@@ -4,3 +4,6 @@
 [submodule "Vendor/ExSwift"]
 	path = Vendor/ExSwift
 	url = https://github.com/pNre/ExSwift.git
+[submodule "Vendor/LTMorphingLabel"]
+	path = Vendor/LTMorphingLabel
+	url = https://github.com/lexrus/LTMorphingLabel.git

@@ -9,7 +9,7 @@
 import UIKit
 
 class ListHeaderView : UIView {
-    @IBOutlet weak var percentageLabel: UILabel!
+    @IBOutlet weak var percentageLabel: LTMorphingLabel!
     @IBOutlet weak var flavorLabel: UILabel!
 
     var percentage : Int = 0 {
@@ -29,19 +29,13 @@ class ListHeaderView : UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+
+        percentageLabel.morphingEffect = .Evaporate
     }
 
     func updatePercentageLabel() {
-        let text = "You've seen \(percentage)% of the Met."
-        let substringRange = (text as NSString).rangeOfString("\(percentage)%")
-        let attributedText = NSMutableAttributedString(string:text)
-
-        let attributes = [
-            NSFontAttributeName: UIFont(name:"Optima-Bold", size:percentageLabel.font.pointSize)
-        ]
-
-        attributedText.addAttributes(attributes, range: substringRange)
-
-        self.percentageLabel.attributedText = attributedText
+        percentageLabel.text = "\(percentage)%"
+        percentageLabel.sizeToFit()
+        percentageLabel.setNeedsUpdateConstraints()
     }
 }
