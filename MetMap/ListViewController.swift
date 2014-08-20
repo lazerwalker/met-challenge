@@ -53,6 +53,8 @@ class ListViewController : UITableViewController {
         let cellName = NSStringFromClass(ListCell.self)
         let nib = UINib(nibName:"ListCell", bundle:nil)
         tableView.registerNib(nib, forCellReuseIdentifier: cellName)
+
+        updatePercentage()
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -94,6 +96,21 @@ class ListViewController : UITableViewController {
 
     override func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String! {
         return floors[section].name
+    }
+
+    // MARK - ListViewController
+    func updatePercentage() {
+        (tableView.tableHeaderView as ListHeaderView).percentage = percentage()
+    }
+
+    func percentage() -> Int {
+        let total = floors
+            .map({ $0.wings })
+            .flatten() as [Wing]
+
+        let completed = total.filter({ $0.completed })
+
+        return Int((Float(completed.count) / Float(total.count)) * 100)
     }
 
     // MARK - Private
