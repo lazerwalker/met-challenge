@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ExSwift
 
 class ListViewController : UITableViewController {
     let CellIdentifier = "Cell"
