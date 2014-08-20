@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A61B315019A396CE009CDB4C /* museummap.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A61B314F19A396CE009CDB4C /* museummap.pdf */; };
+		A61B315219A396DD009CDB4C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61B315119A396DD009CDB4C /* MapViewController.swift */; };
 		A653533419A2AA31005082F0 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A653533319A2AA31005082F0 /* ListCell.xib */; };
 		A69E7F0819A1471500B73550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F0719A1471500B73550 /* AppDelegate.swift */; };
 		A69E7F0F19A1471500B73550 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69E7F0E19A1471500B73550 /* Images.xcassets */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A61B314F19A396CE009CDB4C /* museummap.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = museummap.pdf; sourceTree = "<group>"; };
+		A61B315119A396DD009CDB4C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A653533319A2AA31005082F0 /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
 		A69E7F0219A1471500B73550 /* MetMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69E7F0619A1471500B73550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 		A69E7F0519A1471500B73550 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A61B314F19A396CE009CDB4C /* museummap.pdf */,
 				A69E7F2A19A1565700B73550 /* data.json */,
 				A69E7F0619A1471500B73550 /* Info.plist */,
 			);
@@ -161,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				A69E7F3D19A2261400B73550 /* ListViewController.swift */,
+				A61B315119A396DD009CDB4C /* MapViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 				A69E7F2B19A1565700B73550 /* data.json in Resources */,
 				A653533419A2AA31005082F0 /* ListCell.xib in Resources */,
 				A69E7F0F19A1471500B73550 /* Images.xcassets in Resources */,
+				A61B315019A396CE009CDB4C /* museummap.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +284,7 @@
 				A69E7F2F19A1567300B73550 /* Floor.swift in Sources */,
 				A69E7F3019A1567300B73550 /* Wing.swift in Sources */,
 				A69E7F3B19A223A300B73550 /* Museum.swift in Sources */,
+				A61B315219A396DD009CDB4C /* MapViewController.swift in Sources */,
 				A69E7F3719A1737500B73550 /* SwiftyJSON+Extensions.swift in Sources */,
 				A69E7F3E19A2261400B73550 /* ListViewController.swift in Sources */,
 				A69E7F3919A1B05E00B73550 /* UIColor+Extensions.swift in Sources */,

@@ -49,6 +49,10 @@ class ListViewController : UITableViewController {
         tableView.registerNib(nib, forCellReuseIdentifier: cellName)
     }
 
+    override func viewWillAppear(animated: Bool) {
+        navigationController.navigationBarHidden = true
+    }
+
     // MARK - 
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
@@ -65,6 +69,9 @@ class ListViewController : UITableViewController {
     }
 
     override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        let floor = floors[indexPath.section]
+        let mapController = MapViewController(floor: floor.map)
+        navigationController.pushViewController(mapController, animated: true)
     }
 
     // MARK - UITableViewDataSource

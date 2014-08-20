@@ -8,14 +8,16 @@
 
 class Floor {
     let name:String
+    let map:MapFloor
     let wings:[Wing]
 
     class func createWithJSONValue(json:JSONValue) -> Floor? {
-        if !json.hasKeys(["name", "wings"]){
+        if !json.hasKeys(["name", "map", "wings"]){
             return nil
         }
 
         let name = json["name"].string!
+        let map = MapFloor.fromRaw(json["map"].string!)!
         let wingDicts:[JSONValue] = json["wings"].array!
 
         var wings = wingDicts
@@ -23,12 +25,13 @@ class Floor {
             .filter { !($0 == nil) }
             .map { $0! }
 
-        return Floor(name:name, wings:wings)
+        return Floor(name:name, map:map, wings:wings)
     }
 
-    init(name:String, wings:Array<Wing>) {
+    init(name:String, map:MapFloor, wings:Array<Wing>) {
         self.name = name
         self.wings = wings
+        self.map = map
     }
 }
 

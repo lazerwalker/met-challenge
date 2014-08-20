@@ -16,6 +16,7 @@
   "floors": [
     {
       "name": "1st Floor and Mezzanine",
+      "map": "Floor1",
       "wings": [
         {
           "name": "The American Wing",
@@ -81,6 +82,7 @@
     },
     {
       "name": "2nd and 3rd Floors",
+      "map": "Floors23",
       "wings": [
         {
           "name": "The American Wing",
