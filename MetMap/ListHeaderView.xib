@@ -27,36 +27,36 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHAT ARE YOU WAITING FOR?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fo-2F-9xo">
-                    <rect key="frame" x="15" y="90" width="191" height="16"/>
+                    <rect key="frame" x="15" y="95" width="191" height="16"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izp-nO-U7o" customClass="LTMorphingLabel" customModule="MetMap" customModuleProvider="target">
-                    <rect key="frame" x="145" y="65" width="49" height="28"/>
+                    <rect key="frame" x="143" y="65" width="49" height="28"/>
                     <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="23"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="of the Met." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JW-ZR-XYT" customClass="LTMorphingLabel" customModule="MetMap" customModuleProvider="target">
-                    <rect key="frame" x="201" y="65" width="108" height="28"/>
+                    <rect key="frame" x="197" y="65" width="108" height="28"/>
                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="23"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <constraints>
-                <constraint firstItem="Pff-Aw-nE5" firstAttribute="baseline" secondItem="izp-nO-U7o" secondAttribute="baseline" id="2aA-3f-yFl"/>
                 <constraint firstItem="Pff-Aw-nE5" firstAttribute="leading" secondItem="4fo-2F-9xo" secondAttribute="leading" id="2av-cf-xeb"/>
                 <constraint firstItem="iHu-6S-wxB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8rT-HQ-taU"/>
                 <constraint firstItem="iHu-6S-wxB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="B6R-Uj-Nau"/>
-                <constraint firstItem="1JW-ZR-XYT" firstAttribute="leading" secondItem="izp-nO-U7o" secondAttribute="trailing" constant="7" id="M4J-iQ-58a"/>
+                <constraint firstItem="1JW-ZR-XYT" firstAttribute="leading" secondItem="izp-nO-U7o" secondAttribute="trailing" constant="5" id="M4J-iQ-58a"/>
                 <constraint firstItem="Pff-Aw-nE5" firstAttribute="top" secondItem="iHu-6S-wxB" secondAttribute="bottom" constant="45" id="NWy-k9-J9k"/>
                 <constraint firstItem="Pff-Aw-nE5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="XKf-yu-kH0"/>
-                <constraint firstAttribute="bottom" secondItem="4fo-2F-9xo" secondAttribute="bottom" id="Xcf-FG-eri"/>
-                <constraint firstItem="izp-nO-U7o" firstAttribute="leading" secondItem="Pff-Aw-nE5" secondAttribute="trailing" constant="10" id="dAT-aG-Sr9"/>
+                <constraint firstItem="izp-nO-U7o" firstAttribute="centerY" secondItem="1JW-ZR-XYT" secondAttribute="centerY" id="aTv-Yd-g9g"/>
+                <constraint firstItem="izp-nO-U7o" firstAttribute="leading" secondItem="Pff-Aw-nE5" secondAttribute="trailing" constant="8" id="dAT-aG-Sr9"/>
+                <constraint firstItem="4fo-2F-9xo" firstAttribute="top" secondItem="Pff-Aw-nE5" secondAttribute="bottom" constant="2" id="k1N-mz-cQb"/>
+                <constraint firstItem="izp-nO-U7o" firstAttribute="centerY" secondItem="Pff-Aw-nE5" secondAttribute="centerY" id="uIo-ui-V5w"/>
                 <constraint firstAttribute="trailing" secondItem="iHu-6S-wxB" secondAttribute="trailing" id="xH7-4n-NFs"/>
-                <constraint firstItem="izp-nO-U7o" firstAttribute="bottom" secondItem="1JW-ZR-XYT" secondAttribute="bottom" id="zel-3B-A5G"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
