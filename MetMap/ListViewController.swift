@@ -44,8 +44,8 @@ class ListViewController : UITableViewController {
         tableView.estimatedRowHeight = 80
         tableView.separatorStyle = .None
         tableView.backgroundColor = UIColor.groupTableViewBackgroundColor()
-
         tableView.contentInset = UIEdgeInsetsMake(-20, 0, 0, 0)
+
         tableView.tableHeaderView = ListHeaderView.loadFromNib()
 
         let nib = UINib(nibName:"ListCell", bundle:nil)
@@ -55,6 +55,7 @@ class ListViewController : UITableViewController {
     }
 
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         navigationController.navigationBarHidden = true
     }
 
