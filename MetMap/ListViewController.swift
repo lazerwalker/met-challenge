@@ -10,8 +10,6 @@ import UIKit
 
 
 class ListViewController : UITableViewController {
-    let CellIdentifier = "Cell"
-
     let floors:[Floor] = []
 
     let headerView:ListHeaderView = ListHeaderView.loadFromNib()
@@ -50,9 +48,8 @@ class ListViewController : UITableViewController {
         tableView.contentInset = UIEdgeInsetsMake(-20, 0, 0, 0)
         tableView.tableHeaderView = ListHeaderView.loadFromNib()
 
-        let cellName = NSStringFromClass(ListCell.self)
         let nib = UINib(nibName:"ListCell", bundle:nil)
-        tableView.registerNib(nib, forCellReuseIdentifier: cellName)
+        tableView.registerNib(nib, forCellReuseIdentifier: "ListCell")
 
         updatePercentage()
     }
@@ -68,7 +65,7 @@ class ListViewController : UITableViewController {
 
     // MARK - UITableViewDelegate
     override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        let cell = tableView.dequeueReusableCellWithIdentifier(NSStringFromClass(ListCell.self), forIndexPath:indexPath) as ListCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("ListCell", forIndexPath:indexPath) as ListCell
 
         let wing = wingForIndexPath(indexPath)
         cell.wing = wing

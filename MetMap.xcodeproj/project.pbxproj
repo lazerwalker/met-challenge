@@ -37,7 +37,6 @@
 		A653533419A2AA31005082F0 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A653533319A2AA31005082F0 /* ListCell.xib */; };
 		A69E7F0819A1471500B73550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F0719A1471500B73550 /* AppDelegate.swift */; };
 		A69E7F0F19A1471500B73550 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69E7F0E19A1471500B73550 /* Images.xcassets */; };
-		A69E7F1B19A1471500B73550 /* MetMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F1A19A1471500B73550 /* MetMapTests.swift */; };
 		A69E7F2B19A1565700B73550 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A69E7F2A19A1565700B73550 /* data.json */; };
 		A69E7F2F19A1567300B73550 /* Floor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F2D19A1567300B73550 /* Floor.swift */; };
 		A69E7F3019A1567300B73550 /* Wing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F2E19A1567300B73550 /* Wing.swift */; };
@@ -48,16 +47,6 @@
 		A69E7F3E19A2261400B73550 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F3D19A2261400B73550 /* ListViewController.swift */; };
 		A69E7F4119A2325A00B73550 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F4019A2325A00B73550 /* ListCell.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A69E7F1519A1471500B73550 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A69E7EFA19A1471500B73550 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A69E7F0119A1471500B73550;
-			remoteInfo = MetMap;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A61B314F19A396CE009CDB4C /* museummap.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = museummap.pdf; sourceTree = "<group>"; };
@@ -93,7 +82,6 @@
 		A69E7F0619A1471500B73550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69E7F0719A1471500B73550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69E7F0E19A1471500B73550 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A69E7F1419A1471500B73550 /* MetMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69E7F1919A1471500B73550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69E7F1A19A1471500B73550 /* MetMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetMapTests.swift; sourceTree = "<group>"; };
 		A69E7F2A19A1565700B73550 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
@@ -109,13 +97,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		A69E7EFF19A1471500B73550 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A69E7F1119A1471500B73550 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -195,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				A69E7F0219A1471500B73550 /* MetMap.app */,
-				A69E7F1419A1471500B73550 /* MetMapTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -294,9 +274,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A69E7F0119A1471500B73550 /* MetMap */ = {
+		A69E7F0119A1471500B73550 /* Met Challenge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A69E7F1E19A1471500B73550 /* Build configuration list for PBXNativeTarget "MetMap" */;
+			buildConfigurationList = A69E7F1E19A1471500B73550 /* Build configuration list for PBXNativeTarget "Met Challenge" */;
 			buildPhases = (
 				A69E7EFE19A1471500B73550 /* Sources */,
 				A69E7EFF19A1471500B73550 /* Frameworks */,
@@ -306,28 +286,10 @@
 			);
 			dependencies = (
 			);
-			name = MetMap;
+			name = "Met Challenge";
 			productName = MetMap;
 			productReference = A69E7F0219A1471500B73550 /* MetMap.app */;
 			productType = "com.apple.product-type.application";
-		};
-		A69E7F1319A1471500B73550 /* MetMapTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A69E7F2119A1471500B73550 /* Build configuration list for PBXNativeTarget "MetMapTests" */;
-			buildPhases = (
-				A69E7F1019A1471500B73550 /* Sources */,
-				A69E7F1119A1471500B73550 /* Frameworks */,
-				A69E7F1219A1471500B73550 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A69E7F1619A1471500B73550 /* PBXTargetDependency */,
-			);
-			name = MetMapTests;
-			productName = MetMapTests;
-			productReference = A69E7F1419A1471500B73550 /* MetMapTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -340,10 +302,6 @@
 				TargetAttributes = {
 					A69E7F0119A1471500B73550 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					A69E7F1319A1471500B73550 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = A69E7F0119A1471500B73550;
 					};
 				};
 			};
@@ -360,8 +318,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A69E7F0119A1471500B73550 /* MetMap */,
-				A69E7F1319A1471500B73550 /* MetMapTests */,
+				A69E7F0119A1471500B73550 /* Met Challenge */,
 			);
 		};
 /* End PBXProject section */
@@ -381,13 +338,6 @@
 				A638896B19A5592400436A66 /* Info.plist in Resources */,
 				A61B315019A396CE009CDB4C /* museummap.pdf in Resources */,
 				A63889AD19A55ABB00436A66 /* Smoke.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A69E7F1219A1471500B73550 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,23 +380,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A69E7F1019A1471500B73550 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A69E7F1B19A1471500B73550 /* MetMapTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A69E7F1619A1471500B73550 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A69E7F0119A1471500B73550 /* MetMap */;
-			targetProxy = A69E7F1519A1471500B73550 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A69E7F1C19A1471500B73550 /* Debug */ = {
@@ -548,40 +482,6 @@
 			};
 			name = Release;
 		};
-		A69E7F2219A1471500B73550 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MetMapTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetMap.app/MetMap";
-			};
-			name = Debug;
-		};
-		A69E7F2319A1471500B73550 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MetMapTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetMap.app/MetMap";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -594,20 +494,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A69E7F1E19A1471500B73550 /* Build configuration list for PBXNativeTarget "MetMap" */ = {
+		A69E7F1E19A1471500B73550 /* Build configuration list for PBXNativeTarget "Met Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A69E7F1F19A1471500B73550 /* Debug */,
 				A69E7F2019A1471500B73550 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A69E7F2119A1471500B73550 /* Build configuration list for PBXNativeTarget "MetMapTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A69E7F2219A1471500B73550 /* Debug */,
-				A69E7F2319A1471500B73550 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
