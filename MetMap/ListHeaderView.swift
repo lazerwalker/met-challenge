@@ -55,8 +55,7 @@ class ListHeaderView : UIView {
         "That's pretty impressive.",
         "You're really good at this.",
         "At this rate, you'll be done in no time!",
-        "The journey is its own reward.",
-        "Tell your friends!"
+        "Not bad."
     ]
 
     func generateNewFlavorText() {
@@ -82,7 +81,11 @@ class ListHeaderView : UIView {
                 text = "You did it! 🎉"
 
             default:
-                text = phrases.sample(size:1).first!
+                if (arc4random_uniform(2) == 1) {
+                    text = phrases.sample(size:1).first!
+                } else {
+                    text = flavorLabel.text
+                }
         }
 
         UIView.transitionWithView(flavorLabel,
