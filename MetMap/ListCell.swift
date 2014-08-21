@@ -16,19 +16,7 @@ class ListCell : UITableViewCell {
 
     var wing:Wing? {
         didSet {
-            nameLabel.text = wing?.name
-
-            if (wing?.completed == true) {
-                backgroundColor = wing?.color.colorWithAlphaComponent(0.2)
-                checkmark.highlighted = true
-                checkmark.tintColor = UIColor(hex: "#007502").colorWithAlphaComponent(0.2)
-                nameLabel.textColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
-            } else {
-                backgroundColor = wing?.color
-                checkmark.highlighted = false
-                checkmark.tintColor = UIColor.blackColor().colorWithAlphaComponent(0.7)
-                nameLabel.textColor = UIColor.blackColor().colorWithAlphaComponent(0.7)
-            }
+            renderWing(animated:(oldValue?.name == wing?.name))
         }
     }
 
@@ -60,7 +48,33 @@ class ListCell : UITableViewCell {
         checkmark.addGestureRecognizer(tap)
     }
 
-    //MARK -
+    // MARK -
+    func renderWing(animated:Bool = false) {
+        nameLabel.text = wing?.name
+
+        let wingBlock: ()->() = {
+            if (self.wing?.completed == true) {
+                self.backgroundColor = self.wing?.color.colorWithAlphaComponent(0.2)
+                self.checkmark.highlighted = true
+                self.checkmark.tintColor = UIColor(hex: "#007502").colorWithAlphaComponent(0.2)
+                self.nameLabel.textColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
+            } else {
+                self.backgroundColor = self.wing?.color
+                self.checkmark.highlighted = false
+                self.checkmark.tintColor = UIColor.blackColor().colorWithAlphaComponent(0.7)
+                self.nameLabel.textColor = UIColor.blackColor().colorWithAlphaComponent(0.7)
+            }
+        }
+
+        if (animated) {
+            UIView.animateWithDuration(0.1, animations: wingBlock)
+        } else {
+            wingBlock()
+        }
+
+    }
+
+    // MARK -
     func complete() {
         if (wing?.completed == false) {
             let tempWing = wing
