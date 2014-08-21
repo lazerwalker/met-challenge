@@ -10,7 +10,7 @@ import UIKit
 
 class ListHeaderView : UIView {
     @IBOutlet weak var percentageLabel: LTMorphingLabel!
-    @IBOutlet weak var flavorLabel: LTMorphingLabel!
+    @IBOutlet weak var flavorLabel: UILabel!
 
     var percentage : Int = 0 {
         didSet {
@@ -31,7 +31,6 @@ class ListHeaderView : UIView {
         super.awakeFromNib()
 
         percentageLabel.morphingEffect = .Evaporate
-        flavorLabel.morphingEffect = .Evaporate
     }
 
     func updatePercentageLabel() {
@@ -86,6 +85,12 @@ class ListHeaderView : UIView {
                 text = phrases.sample(size:1).first!
         }
 
-        flavorLabel.text = text.uppercaseString
+        UIView.transitionWithView(flavorLabel,
+            duration: 0.2,
+            options: .TransitionCrossDissolve,
+            animations: {
+                self.flavorLabel.text = text.uppercaseString
+            },
+            completion: nil)
     }
 }
