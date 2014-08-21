@@ -49,13 +49,12 @@ class ListHeaderView : UIView {
     ]
 
     let phrases = [
-        "Nice!",
-        "Keep up the great pace",
-        "Isn't art great?",
-        "That's pretty impressive.",
-        "You're really good at this.",
-        "At this rate, you'll be done in no time!",
-        "Not bad."
+        "NICE!",
+        "KEEP UP THE GREAT PACE.",
+        "THAT'S PRETTY IMPRESSIVE.",
+        "YOU'RE REALLY GOOD AT THIS.",
+        "AT THIS RATE, YOU'LL BE DONE IN NO TIME!",
+        "NOT BAD."
     ]
 
     func generateNewFlavorText() {
@@ -81,7 +80,7 @@ class ListHeaderView : UIView {
                 text = "You did it! 🎉"
 
             default:
-                if (arc4random_uniform(2) == 1) {
+                if (arc4random_uniform(4) == 1 || !contains(phrases, flavorLabel.text)) {
                     text = phrases.sample(size:1).first!
                 } else {
                     text = flavorLabel.text
