@@ -10,7 +10,7 @@ import UIKit
 
 class ListHeaderView : UIView {
     @IBOutlet weak var percentageLabel: LTMorphingLabel!
-    @IBOutlet weak var flavorLabel: UILabel!
+    @IBOutlet weak var flavorLabel: LTMorphingLabel!
 
     var percentage : Int = 0 {
         didSet {
@@ -31,11 +31,61 @@ class ListHeaderView : UIView {
         super.awakeFromNib()
 
         percentageLabel.morphingEffect = .Evaporate
+        flavorLabel.morphingEffect = .Evaporate
     }
 
     func updatePercentageLabel() {
         percentageLabel.text = "\(percentage)%"
         percentageLabel.sizeToFit()
         percentageLabel.setNeedsUpdateConstraints()
+
+        generateNewFlavorText()
+    }
+
+    // MARK - Flavor test
+    let zeroPhrases = [
+        "What are you waiting for?",
+        "No time like the present!",
+        "Take the first step!"
+    ]
+
+    let phrases = [
+        "Nice!",
+        "Keep up the great pace",
+        "Isn't art great?",
+        "That's pretty impressive.",
+        "You're really good at this.",
+        "At this rate, you'll be done in no time!",
+        "The journey is its own reward.",
+        "Tell your friends!"
+    ]
+
+    func generateNewFlavorText() {
+        var text:String = ""
+
+        switch(percentage) {
+            case 0:
+                text = zeroPhrases.sample(size: 1).first!
+
+            case 24...26:
+                text = "A quarter done!"
+            case 32...34:
+                text = "A third of the way there!"
+            case 49...51:
+                text = "Halfway there!"
+            case 65-67:
+                text = "Two-thirds of the way!"
+            case 74...76:
+                text = "Three-quarters done!"
+            case 95...99:
+                text = "So close!"
+            case 100:
+                text = "You did it! 🎉"
+
+            default:
+                text = phrases.sample(size:1).first!
+        }
+
+        flavorLabel.text = text.uppercaseString
     }
 }
