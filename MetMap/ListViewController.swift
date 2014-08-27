@@ -64,6 +64,7 @@ class ListViewController : UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationController.navigationBarHidden = true
+        self.tableView.reloadData()
     }
 
     // MARK - 
