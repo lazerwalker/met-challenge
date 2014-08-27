@@ -16,11 +16,4 @@ class FTUEViewController3: UIViewController {
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        for subview in view.subviews {
-            println(subview)
-        }
-    }
 }
