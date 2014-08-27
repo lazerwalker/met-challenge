@@ -23,6 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
 
+        if !NSUserDefaults.standardUserDefaults().boolForKey("seenFTUE") {
+            let ftue = FTUEViewController()
+            navController.presentViewController(ftue, animated: false, completion: nil)
+        }
+
         return true
     }
 }

@@ -7,8 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A61B315019A396CE009CDB4C /* museummap.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A61B314F19A396CE009CDB4C /* museummap.pdf */; };
 		A61B315219A396DD009CDB4C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61B315119A396DD009CDB4C /* MapViewController.swift */; };
+		A636761E19AD3A1C0004BF28 /* FTUEViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636761C19AD3A1C0004BF28 /* FTUEViewController2.swift */; };
+		A636761F19AD3A1C0004BF28 /* FTUEViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = A636761D19AD3A1C0004BF28 /* FTUEViewController2.xib */; };
+		A636762819AD41680004BF28 /* FTUEViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636762619AD41680004BF28 /* FTUEViewController3.swift */; };
+		A636762919AD41680004BF28 /* FTUEViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = A636762719AD41680004BF28 /* FTUEViewController3.xib */; };
+		A636762D19AD44630004BF28 /* tap.png in Resources */ = {isa = PBXBuildFile; fileRef = A636762C19AD44630004BF28 /* tap.png */; };
+		A636763019AD4D930004BF28 /* FTUEViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636762E19AD4D930004BF28 /* FTUEViewController4.swift */; };
+		A636763119AD4D930004BF28 /* FTUEViewController4.xib in Resources */ = {isa = PBXBuildFile; fileRef = A636762F19AD4D930004BF28 /* FTUEViewController4.xib */; };
+		A636763319AD4FC00004BF28 /* swipe.png in Resources */ = {isa = PBXBuildFile; fileRef = A636763219AD4FC00004BF28 /* swipe.png */; };
+		A636763919AD53FB0004BF28 /* ftue3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A636763419AD53FB0004BF28 /* ftue3.jpg */; };
+		A636763A19AD53FB0004BF28 /* ftue4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A636763519AD53FB0004BF28 /* ftue4.jpg */; };
+		A636763B19AD53FB0004BF28 /* ftue2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A636763619AD53FB0004BF28 /* ftue2.jpg */; };
+		A636763C19AD53FB0004BF28 /* ftue1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A636763719AD53FB0004BF28 /* ftue1.jpg */; };
+		A636763D19AD53FB0004BF28 /* ftue5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A636763819AD53FB0004BF28 /* ftue5.jpg */; };
+		A636764019AD541A0004BF28 /* FTUEViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636763E19AD541A0004BF28 /* FTUEViewController5.swift */; };
+		A636764119AD541A0004BF28 /* FTUEViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = A636763F19AD541A0004BF28 /* FTUEViewController5.xib */; };
+		A636764519AD62790004BF28 /* ListFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636764419AD62790004BF28 /* ListFooterView.swift */; };
 		A638890619A5391B00436A66 /* ListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A638890519A5391B00436A66 /* ListHeaderView.xib */; };
 		A638890819A539BB00436A66 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638890719A539BB00436A66 /* ListHeaderView.swift */; };
 		A638896119A5592400436A66 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638895319A5592400436A66 /* Sequence.swift */; };
@@ -35,6 +50,9 @@
 		A63889AD19A55ABB00436A66 /* Smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = A638899E19A55ABB00436A66 /* Smoke.png */; };
 		A63889AE19A55ABB00436A66 /* Fragment.png in Resources */ = {isa = PBXBuildFile; fileRef = A638899F19A55ABB00436A66 /* Fragment.png */; };
 		A653533419A2AA31005082F0 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A653533319A2AA31005082F0 /* ListCell.xib */; };
+		A689559E19AD0DFF000AD4CD /* FTUEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689559D19AD0DFF000AD4CD /* FTUEViewController.swift */; };
+		A68955A219AD29A1000AD4CD /* FTUEViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68955A019AD29A1000AD4CD /* FTUEViewController1.swift */; };
+		A68955A319AD29A1000AD4CD /* FTUEViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68955A119AD29A1000AD4CD /* FTUEViewController1.xib */; };
 		A69E7F0819A1471500B73550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E7F0719A1471500B73550 /* AppDelegate.swift */; };
 		A69E7F0F19A1471500B73550 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69E7F0E19A1471500B73550 /* Images.xcassets */; };
 		A69E7F2B19A1565700B73550 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A69E7F2A19A1565700B73550 /* data.json */; };
@@ -49,8 +67,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A61B314F19A396CE009CDB4C /* museummap.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = museummap.pdf; sourceTree = "<group>"; };
 		A61B315119A396DD009CDB4C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A636761C19AD3A1C0004BF28 /* FTUEViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUEViewController2.swift; sourceTree = "<group>"; };
+		A636761D19AD3A1C0004BF28 /* FTUEViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTUEViewController2.xib; sourceTree = "<group>"; };
+		A636762619AD41680004BF28 /* FTUEViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUEViewController3.swift; sourceTree = "<group>"; };
+		A636762719AD41680004BF28 /* FTUEViewController3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTUEViewController3.xib; sourceTree = "<group>"; };
+		A636762C19AD44630004BF28 /* tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tap.png; sourceTree = "<group>"; };
+		A636762E19AD4D930004BF28 /* FTUEViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUEViewController4.swift; sourceTree = "<group>"; };
+		A636762F19AD4D930004BF28 /* FTUEViewController4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTUEViewController4.xib; sourceTree = "<group>"; };
+		A636763219AD4FC00004BF28 /* swipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swipe.png; sourceTree = "<group>"; };
+		A636763419AD53FB0004BF28 /* ftue3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ftue3.jpg; sourceTree = "<group>"; };
+		A636763519AD53FB0004BF28 /* ftue4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ftue4.jpg; sourceTree = "<group>"; };
+		A636763619AD53FB0004BF28 /* ftue2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ftue2.jpg; sourceTree = "<group>"; };
+		A636763719AD53FB0004BF28 /* ftue1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ftue1.jpg; sourceTree = "<group>"; };
+		A636763819AD53FB0004BF28 /* ftue5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ftue5.jpg; sourceTree = "<group>"; };
+		A636763E19AD541A0004BF28 /* FTUEViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUEViewController5.swift; sourceTree = "<group>"; };
+		A636763F19AD541A0004BF28 /* FTUEViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTUEViewController5.xib; sourceTree = "<group>"; };
+		A636764419AD62790004BF28 /* ListFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFooterView.swift; sourceTree = "<group>"; };
 		A638890519A5391B00436A66 /* ListHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListHeaderView.xib; sourceTree = "<group>"; };
 		A638890719A539BB00436A66 /* ListHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
 		A638895319A5592400436A66 /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
@@ -78,7 +111,10 @@
 		A638899E19A55ABB00436A66 /* Smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Smoke.png; sourceTree = "<group>"; };
 		A638899F19A55ABB00436A66 /* Fragment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fragment.png; sourceTree = "<group>"; };
 		A653533319A2AA31005082F0 /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
-		A69E7F0219A1471500B73550 /* MetMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A689559D19AD0DFF000AD4CD /* FTUEViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUEViewController.swift; sourceTree = "<group>"; };
+		A68955A019AD29A1000AD4CD /* FTUEViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUEViewController1.swift; sourceTree = "<group>"; };
+		A68955A119AD29A1000AD4CD /* FTUEViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTUEViewController1.xib; sourceTree = "<group>"; };
+		A69E7F0219A1471500B73550 /* Met Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Met Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69E7F0619A1471500B73550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69E7F0719A1471500B73550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69E7F0E19A1471500B73550 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -162,6 +198,23 @@
 			path = ../Vendor/LTMorphingLabel/LTMorphingLabel;
 			sourceTree = "<group>";
 		};
+		A689559F19AD298A000AD4CD /* ftue */ = {
+			isa = PBXGroup;
+			children = (
+				A68955A019AD29A1000AD4CD /* FTUEViewController1.swift */,
+				A68955A119AD29A1000AD4CD /* FTUEViewController1.xib */,
+				A636761C19AD3A1C0004BF28 /* FTUEViewController2.swift */,
+				A636761D19AD3A1C0004BF28 /* FTUEViewController2.xib */,
+				A636762619AD41680004BF28 /* FTUEViewController3.swift */,
+				A636762719AD41680004BF28 /* FTUEViewController3.xib */,
+				A636762E19AD4D930004BF28 /* FTUEViewController4.swift */,
+				A636762F19AD4D930004BF28 /* FTUEViewController4.xib */,
+				A636763E19AD541A0004BF28 /* FTUEViewController5.swift */,
+				A636763F19AD541A0004BF28 /* FTUEViewController5.xib */,
+			);
+			name = ftue;
+			sourceTree = "<group>";
+		};
 		A69E7EF919A1471500B73550 = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +228,7 @@
 		A69E7F0319A1471500B73550 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A69E7F0219A1471500B73550 /* MetMap.app */,
+				A69E7F0219A1471500B73550 /* Met Challenge.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,7 +250,13 @@
 		A69E7F0519A1471500B73550 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A61B314F19A396CE009CDB4C /* museummap.pdf */,
+				A636763419AD53FB0004BF28 /* ftue3.jpg */,
+				A636763519AD53FB0004BF28 /* ftue4.jpg */,
+				A636763619AD53FB0004BF28 /* ftue2.jpg */,
+				A636763719AD53FB0004BF28 /* ftue1.jpg */,
+				A636763819AD53FB0004BF28 /* ftue5.jpg */,
+				A636763219AD4FC00004BF28 /* swipe.png */,
+				A636762C19AD44630004BF28 /* tap.png */,
 				A69E7F2A19A1565700B73550 /* data.json */,
 				A69E7F0619A1471500B73550 /* Info.plist */,
 			);
@@ -254,8 +313,10 @@
 		A69E7F3C19A225EB00B73550 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A689559F19AD298A000AD4CD /* ftue */,
 				A69E7F3D19A2261400B73550 /* ListViewController.swift */,
 				A61B315119A396DD009CDB4C /* MapViewController.swift */,
+				A689559D19AD0DFF000AD4CD /* FTUEViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -267,6 +328,7 @@
 				A653533319A2AA31005082F0 /* ListCell.xib */,
 				A638890519A5391B00436A66 /* ListHeaderView.xib */,
 				A638890719A539BB00436A66 /* ListHeaderView.swift */,
+				A636764419AD62790004BF28 /* ListFooterView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -288,7 +350,7 @@
 			);
 			name = "Met Challenge";
 			productName = MetMap;
-			productReference = A69E7F0219A1471500B73550 /* MetMap.app */;
+			productReference = A69E7F0219A1471500B73550 /* Met Challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -330,14 +392,25 @@
 			files = (
 				A63889AC19A55ABB00436A66 /* Sparkle.png in Resources */,
 				A69E7F2B19A1565700B73550 /* data.json in Resources */,
+				A68955A319AD29A1000AD4CD /* FTUEViewController1.xib in Resources */,
+				A636763C19AD53FB0004BF28 /* ftue1.jpg in Resources */,
+				A636763119AD4D930004BF28 /* FTUEViewController4.xib in Resources */,
+				A636762D19AD44630004BF28 /* tap.png in Resources */,
 				A638890619A5391B00436A66 /* ListHeaderView.xib in Resources */,
+				A636763319AD4FC00004BF28 /* swipe.png in Resources */,
+				A636763A19AD53FB0004BF28 /* ftue4.jpg in Resources */,
+				A636763D19AD53FB0004BF28 /* ftue5.jpg in Resources */,
 				A653533419A2AA31005082F0 /* ListCell.xib in Resources */,
 				A69E7F0F19A1471500B73550 /* Images.xcassets in Resources */,
 				A63889AE19A55ABB00436A66 /* Fragment.png in Resources */,
 				A63889AB19A55ABB00436A66 /* Fire.png in Resources */,
+				A636761F19AD3A1C0004BF28 /* FTUEViewController2.xib in Resources */,
 				A638896B19A5592400436A66 /* Info.plist in Resources */,
-				A61B315019A396CE009CDB4C /* museummap.pdf in Resources */,
+				A636763B19AD53FB0004BF28 /* ftue2.jpg in Resources */,
+				A636762919AD41680004BF28 /* FTUEViewController3.xib in Resources */,
+				A636764119AD541A0004BF28 /* FTUEViewController5.xib in Resources */,
 				A63889AD19A55ABB00436A66 /* Smoke.png in Resources */,
+				A636763919AD53FB0004BF28 /* ftue3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +421,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A689559E19AD0DFF000AD4CD /* FTUEViewController.swift in Sources */,
+				A636764019AD541A0004BF28 /* FTUEViewController5.swift in Sources */,
 				A638896A19A5592400436A66 /* NSArray.swift in Sources */,
 				A69E7F2F19A1567300B73550 /* Floor.swift in Sources */,
 				A69E7F3019A1567300B73550 /* Wing.swift in Sources */,
@@ -363,6 +438,8 @@
 				A69E7F3719A1737500B73550 /* SwiftyJSON+Extensions.swift in Sources */,
 				A69E7F3E19A2261400B73550 /* ListViewController.swift in Sources */,
 				A69E7F3919A1B05E00B73550 /* UIColor+Extensions.swift in Sources */,
+				A68955A219AD29A1000AD4CD /* FTUEViewController1.swift in Sources */,
+				A636763019AD4D930004BF28 /* FTUEViewController4.swift in Sources */,
 				A69E7F4119A2325A00B73550 /* ListCell.swift in Sources */,
 				A63889A319A55ABB00436A66 /* NSString+LTMorphingLabel.swift in Sources */,
 				A63889A719A55ABB00436A66 /* LTMorphingLabel+Pixelate.swift in Sources */,
@@ -371,11 +448,14 @@
 				A638896419A5592400436A66 /* Dictionary.swift in Sources */,
 				A638890819A539BB00436A66 /* ListHeaderView.swift in Sources */,
 				A69E7F3319A1620E00B73550 /* SwiftyJSON.swift in Sources */,
+				A636761E19AD3A1C0004BF28 /* FTUEViewController2.swift in Sources */,
 				A63889A919A55ABB00436A66 /* LTMorphingLabel+Burn.swift in Sources */,
 				A63889A619A55ABB00436A66 /* LTMorphingLabel+Fall.swift in Sources */,
 				A638896619A5592400436A66 /* Float.swift in Sources */,
 				A69E7F0819A1471500B73550 /* AppDelegate.swift in Sources */,
 				A638896819A5592400436A66 /* Range.swift in Sources */,
+				A636764519AD62790004BF28 /* ListFooterView.swift in Sources */,
+				A636762819AD41680004BF28 /* FTUEViewController3.swift in Sources */,
 				A63889AA19A55ABB00436A66 /* LTMorphingLabel+Anvil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

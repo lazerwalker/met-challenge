@@ -19,7 +19,7 @@ class ListViewController : UITableViewController {
     override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
         var error: NSError?
         let path = NSBundle.mainBundle().pathForResource("data", ofType: "json")
-        let data = NSData.dataWithContentsOfFile(path, options: nil, error: &error)
+        let data = NSData.dataWithContentsOfFile(path!, options: nil, error: &error)
         let dict = JSONValue(data)
         floors = Museum(dict: dict).floors
 
@@ -33,7 +33,7 @@ class ListViewController : UITableViewController {
     }
 
 
-    required init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder) {
         super.init(coder:aDecoder)
     }
 
@@ -47,6 +47,13 @@ class ListViewController : UITableViewController {
         tableView.contentInset = UIEdgeInsetsMake(-20, 0, 0, 0)
 
         tableView.tableHeaderView = ListHeaderView.loadFromNib()
+
+        let footer = ListFooterView()
+        tableView.tableFooterView = footer
+        footer.tapHandler = {
+            let ftue = FTUEViewController()
+            self.navigationController.presentViewController(ftue, animated: true, completion: nil)
+        }
 
         let nib = UINib(nibName:"ListCell", bundle:nil)
         tableView.registerNib(nib, forCellReuseIdentifier: "ListCell")
