@@ -3,5 +3,6 @@
 
 target "Met Challenge" do
 pod "Asterism", "<1.0.0"
+pod 'FlurrySDK', '~> 5.3'
 end
 
