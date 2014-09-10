@@ -82,10 +82,6 @@ struct LTCharacterLimbo: DebugPrintable {
     var debugDescription: String {
     get {
         return "Character: '\(char)'"
-            + "drawIn (\(rect.origin.x), \(rect.origin.y), "
-            + "\(rect.size.width)x\(rect.size.height) "
-            + "with alpha \(alpha) "
-            + "and \(size)pt font."
     }
     }
     
