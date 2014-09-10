@@ -33,8 +33,8 @@ class ListCell : UITableViewCell {
 
         selectionStyle = .None
 
-        checkmark.image = checkmark.image.imageWithRenderingMode(.AlwaysTemplate)
-        checkmark.highlightedImage = checkmark.highlightedImage.imageWithRenderingMode(.AlwaysTemplate)
+        checkmark.image = checkmark.image?.imageWithRenderingMode(.AlwaysTemplate)
+        checkmark.highlightedImage = checkmark.highlightedImage?.imageWithRenderingMode(.AlwaysTemplate)
 
         let swipeToComplete = UISwipeGestureRecognizer(target: self, action: "complete")
         swipeToComplete.direction = .Right

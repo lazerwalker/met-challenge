@@ -17,7 +17,7 @@ class ListFooterView : UIView {
         let button:UIButton = UIButton.buttonWithType(.System) as UIButton
         button.setTranslatesAutoresizingMaskIntoConstraints(false)
         button.setTitle("?", forState:.Normal)
-        button.titleLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 20.0)
+        button.titleLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 20.0)
         button.tintColor = UIColor.grayColor()
         button.addTarget(self, action: "didTapQuestionMark", forControlEvents: .TouchUpInside)
 

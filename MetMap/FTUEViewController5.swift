@@ -22,6 +22,6 @@ class FTUEViewController5: UIViewController {
         defaults.setBool(true, forKey: "seenFTUE")
         defaults.synchronize()
         
-        self.presentingViewController.dismissViewControllerAnimated(true, completion: nil)
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
 }

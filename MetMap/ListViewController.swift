@@ -52,7 +52,7 @@ class ListViewController : UITableViewController {
         tableView.tableFooterView = footer
         footer.tapHandler = {
             let ftue = FTUEViewController()
-            self.navigationController.presentViewController(ftue, animated: true, completion: nil)
+            self.navigationController?.presentViewController(ftue, animated: true, completion: nil)
         }
 
         let nib = UINib(nibName:"ListCell", bundle:nil)
@@ -63,7 +63,7 @@ class ListViewController : UITableViewController {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController.navigationBarHidden = true
+        navigationController?.navigationBarHidden = true
         self.tableView.reloadData()
     }
 
@@ -73,7 +73,7 @@ class ListViewController : UITableViewController {
     }
 
     // MARK - UITableViewDelegate
-    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ListCell", forIndexPath:indexPath) as ListCell
 
         let wing = wingForIndexPath(indexPath)
@@ -83,25 +83,25 @@ class ListViewController : UITableViewController {
         return cell
     }
 
-    override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let floor = floors[indexPath.section]
         let wing = wingForIndexPath(indexPath)
 
         let mapController = MapViewController(floor: floor.map)
         mapController.focusedWing = wing
-        navigationController.pushViewController(mapController, animated: true)
+        navigationController?.pushViewController(mapController, animated: true)
     }
 
     // MARK - UITableViewDataSource
-    override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return floors.count
     }
 
-    override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return floors[section].wings.count
     }
 
-    override func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String! {
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return floors[section].name
     }
 

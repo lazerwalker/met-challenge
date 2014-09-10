@@ -59,11 +59,11 @@ class ListHeaderView : UIView {
 
     func generateNewFlavorText() {
         var text:String = ""
+        let flavorText = flavorLabel.text!
 
         switch(percentage) {
             case 0:
                 text = zeroPhrases.sample(size: 1).first!
-
             case 24...26:
                 text = "A quarter done!"
             case 32...34:
@@ -78,12 +78,11 @@ class ListHeaderView : UIView {
                 text = "So close!"
             case 100:
                 text = "You did it! 🎉"
-
             default:
-                if (arc4random_uniform(4) == 1 || !contains(phrases, flavorLabel.text)) {
+                if (arc4random_uniform(4) == 1 || !contains(phrases, flavorText)) {
                     text = phrases.sample(size:1).first!
                 } else {
-                    text = flavorLabel.text
+                    text = flavorText
                 }
         }
 

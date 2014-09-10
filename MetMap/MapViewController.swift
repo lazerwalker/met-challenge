@@ -63,10 +63,10 @@ class MapViewController : UIViewController, UIScrollViewDelegate {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController.navigationBarHidden = false
+        navigationController?.navigationBarHidden = false
 
         if let wing = focusedWing {
-            navigationController.navigationBar.tintColor = wing.color
+            navigationController?.navigationBar.tintColor = wing.color
 
             let titleView = UILabel()
             titleView.text = wing.name

@@ -29,23 +29,23 @@ class FTUEViewController: UIPageViewController, UIPageViewControllerDataSource {
 
     //MARK - UIPageViewControllerDataSource
 
-    func pageViewController(pageViewController: UIPageViewController!, viewControllerAfterViewController viewController: UIViewController!) -> UIViewController! {
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         let index = vcs.indexOf(viewController)! + 1
         if (index == vcs.count) { return nil; }
         return vcs[index]
     }
 
-    func pageViewController(pageViewController: UIPageViewController!, viewControllerBeforeViewController viewController: UIViewController!) -> UIViewController! {
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         let index = vcs.indexOf(viewController)! - 1
         if (index == -1) { return nil; }
         return vcs[index]
     }
 
-    func presentationCountForPageViewController(pageViewController: UIPageViewController!) -> Int {
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
         return 5
     }
 
-    func presentationIndexForPageViewController(pageViewController: UIPageViewController!) -> Int {
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
         return vcs.indexOf(viewControllers[0] as UIViewController)!
     }
 }
