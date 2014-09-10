@@ -81,6 +81,8 @@ class ListCell : UITableViewCell {
             tempWing?.completed = true
             wing = tempWing
 
+            Analytics.track("Completed", params:["wing":nameLabel.text!, "checkbox":"false"])
+
             if let block = didChangeBlock {
                 block(wing)
             }
@@ -93,6 +95,8 @@ class ListCell : UITableViewCell {
             tempWing?.completed = false
             wing = tempWing
 
+            Analytics.track("Undo", params:["wing":nameLabel.text!, "checkbox":"false"])
+
             if let block = didChangeBlock {
                 block(wing)
             }
@@ -101,8 +105,13 @@ class ListCell : UITableViewCell {
 
     func tappedCheckmark() {
         let tempWing = wing
-        tempWing?.completed = !(tempWing!.completed)
+        let completed = !(tempWing!.completed)
+        tempWing?.completed = completed
         wing = tempWing
+
+        let params = ["wing":nameLabel.text!, "checkbox":"true"]
+        let event = completed ? "Completed" : "Undo"
+        Analytics.track(event, params:params)
 
         if let block = didChangeBlock {
             block(wing)

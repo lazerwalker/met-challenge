@@ -78,7 +78,10 @@ class ListViewController : UITableViewController {
 
         let wing = wingForIndexPath(indexPath)
         cell.wing = wing
-        cell.didChangeBlock = { (_) in self.updatePercentage() }
+        cell.didChangeBlock = { (_) in
+            self.updatePercentage()
+            Analytics.track("Updated", params:["percentage":self.percentage()])
+        }
 
         return cell
     }
@@ -90,6 +93,8 @@ class ListViewController : UITableViewController {
         let mapController = MapViewController(floor: floor.map)
         mapController.focusedWing = wing
         navigationController?.pushViewController(mapController, animated: true)
+
+        Analytics.track("Viewed map")
     }
 
     // MARK - UITableViewDataSource

@@ -28,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             navController.presentViewController(ftue, animated: false, completion: nil)
         }
 
+        Analytics.start()
+        
         return true
     }
 }
