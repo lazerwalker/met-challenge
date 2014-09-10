@@ -1,0 +1,10 @@
+PODS:
+  - Asterism (1.0.0-RC3)
+
+DEPENDENCIES:
+  - Asterism (< 1.0.0)
+
+SPEC CHECKSUMS:
+  Asterism: 6e29615a8106e2a8f3000b0d771f106c9d415d18
+
+COCOAPODS: 0.33.1
