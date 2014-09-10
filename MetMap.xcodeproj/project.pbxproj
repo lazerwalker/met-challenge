@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A61B315219A396DD009CDB4C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61B315119A396DD009CDB4C /* MapViewController.swift */; };
+		A62B5F0A19C0832D0054C344 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62B5F0919C0832D0054C344 /* Launch Screen.xib */; };
 		A636761E19AD3A1C0004BF28 /* FTUEViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636761C19AD3A1C0004BF28 /* FTUEViewController2.swift */; };
 		A636761F19AD3A1C0004BF28 /* FTUEViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = A636761D19AD3A1C0004BF28 /* FTUEViewController2.xib */; };
 		A636762819AD41680004BF28 /* FTUEViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636762619AD41680004BF28 /* FTUEViewController3.swift */; };
@@ -68,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		A61B315119A396DD009CDB4C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A62B5F0919C0832D0054C344 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		A636761C19AD3A1C0004BF28 /* FTUEViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUEViewController2.swift; sourceTree = "<group>"; };
 		A636761D19AD3A1C0004BF28 /* FTUEViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTUEViewController2.xib; sourceTree = "<group>"; };
 		A636762619AD41680004BF28 /* FTUEViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUEViewController3.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				A69E7F0719A1471500B73550 /* AppDelegate.swift */,
 				A69E7F0E19A1471500B73550 /* Images.xcassets */,
 				A69E7F0519A1471500B73550 /* Supporting Files */,
+				A62B5F0919C0832D0054C344 /* Launch Screen.xib */,
 			);
 			path = MetMap;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				A68955A319AD29A1000AD4CD /* FTUEViewController1.xib in Resources */,
 				A636763C19AD53FB0004BF28 /* ftue1.jpg in Resources */,
 				A636763119AD4D930004BF28 /* FTUEViewController4.xib in Resources */,
+				A62B5F0A19C0832D0054C344 /* Launch Screen.xib in Resources */,
 				A636762D19AD44630004BF28 /* tap.png in Resources */,
 				A638890619A5391B00436A66 /* ListHeaderView.xib in Resources */,
 				A636763319AD4FC00004BF28 /* swipe.png in Resources */,

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ftue1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yyc-9x-RSV">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="e6k-Vh-uAC">
+                    <rect key="frame" x="240" y="110" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="BgS-Ps-Pbu"/>
+                        <constraint firstAttribute="width" constant="120" id="gpf-Vc-QBq"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFW-Cw-thb">
+                    <rect key="frame" x="264" y="122" width="72" height="96"/>
+                    <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="80"/>
+                    <color key="textColor" red="0.98889907529999999" green="0.98889907529999999" blue="0.98889907529999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Met Challenge" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
+                    <rect key="frame" x="0.0" y="275" width="600" height="131"/>
+                    <color key="backgroundColor" red="0.98889907529999999" green="0.98889907529999999" blue="0.98889907529999999" alpha="0.78000000000000003" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="131" id="LWp-Xo-GgX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="42"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="1" height="1"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="e6k-Vh-uAC" secondAttribute="centerX" id="0dG-sC-gdx"/>
+                <constraint firstAttribute="bottom" secondItem="yyc-9x-RSV" secondAttribute="bottom" id="13N-yy-4mA"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="17z-LD-sfY"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="e6k-Vh-uAC" secondAttribute="bottom" constant="45" id="2Dx-5j-lo8"/>
+                <constraint firstAttribute="trailing" secondItem="kId-c2-rCX" secondAttribute="trailing" id="2do-1n-tly"/>
+                <constraint firstAttribute="trailing" secondItem="yyc-9x-RSV" secondAttribute="trailing" id="4FT-8m-MCM"/>
+                <constraint firstItem="yyc-9x-RSV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4nk-U5-I7m"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" id="Kid-kn-2rF"/>
+                <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
+                <constraint firstItem="e6k-Vh-uAC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="110" id="N1T-pr-Noz"/>
+                <constraint firstAttribute="trailing" secondItem="yyc-9x-RSV" secondAttribute="trailing" id="RCG-kT-0VH"/>
+                <constraint firstItem="yyc-9x-RSV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="T2N-1c-wan"/>
+                <constraint firstItem="e6k-Vh-uAC" firstAttribute="centerY" secondItem="HFW-Cw-thb" secondAttribute="centerY" id="We5-vQ-99b"/>
+                <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="d5p-NG-g4E"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
+                <constraint firstItem="e6k-Vh-uAC" firstAttribute="centerX" secondItem="HFW-Cw-thb" secondAttribute="centerX" id="iBx-EB-89a"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Kid-kn-2rF"/>
+                    <exclude reference="fvb-Df-36g"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="404" y="445"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="circle" width="500" height="500"/>
+        <image name="ftue1.jpg" width="1024" height="681"/>
+    </resources>
+</document>
