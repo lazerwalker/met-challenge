@@ -1,15 +1,12 @@
 PODS:
-  - Asterism (1.0.0-RC3)
   - FlurrySDK (5.3.0):
     - FlurrySDK/FlurrySDK
   - FlurrySDK/FlurrySDK (5.3.0)
 
 DEPENDENCIES:
-  - Asterism (< 1.0.0)
   - FlurrySDK (~> 5.3)
 
 SPEC CHECKSUMS:
-  Asterism: 6e29615a8106e2a8f3000b0d771f106c9d415d18
   FlurrySDK: e1142ae33e294f8307bd6d2209cc082e79b66e90
 
 COCOAPODS: 0.33.1
