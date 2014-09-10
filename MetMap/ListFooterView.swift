@@ -51,6 +51,7 @@ class ListFooterView : UIView {
     }
 
     func didTapQuestionMark() {
+        Analytics.track("Manually toggled FTUE")
         if let block = tapHandler {
             block()
         }

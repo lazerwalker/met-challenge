@@ -21,6 +21,8 @@ class FTUEViewController5: UIViewController {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setBool(true, forKey: "seenFTUE")
         defaults.synchronize()
+
+        Analytics.track("Completed FTUE")
         
         self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
