@@ -1,12 +1,12 @@
 PODS:
-  - FlurrySDK (5.3.0):
-    - FlurrySDK/FlurrySDK
-  - FlurrySDK/FlurrySDK (5.3.0)
+  - FlurrySDK (5.4.0):
+    - FlurrySDK/FlurrySDK (= 5.4.0)
+  - FlurrySDK/FlurrySDK (5.4.0)
 
 DEPENDENCIES:
   - FlurrySDK (~> 5.3)
 
 SPEC CHECKSUMS:
-  FlurrySDK: e1142ae33e294f8307bd6d2209cc082e79b66e90
+  FlurrySDK: bed9e5598353f867508d164795a451e3ada92cb6
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.35.0.rc1
