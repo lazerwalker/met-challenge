@@ -9,7 +9,7 @@
 import UIKit
 
 class FTUEViewController3: UIViewController {
-    override init() {
+    init() {
         super.init(nibName: "FTUEViewController3", bundle: nil)
     }
 

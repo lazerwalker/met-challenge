@@ -53,7 +53,7 @@ class Wing {
         self.mapRect = mapRect
         self.floor = floor
 
-        self.storageKey = "\(floor.toRaw())-\(name)"
+        self.storageKey = "\(floor.rawValue)-\(name)"
         self.completed = userDefaults.boolForKey(storageKey)
     }
 }

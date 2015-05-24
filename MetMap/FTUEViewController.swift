@@ -11,7 +11,7 @@ import UIKit
 class FTUEViewController: UIPageViewController, UIPageViewControllerDataSource {
     let vcs = [FTUEViewController1(), FTUEViewController2(), FTUEViewController3(), FTUEViewController4(), FTUEViewController5()]
 
-    override init() {
+    init() {
         super.init(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
         self.dataSource = self
 
@@ -19,7 +19,7 @@ class FTUEViewController: UIPageViewController, UIPageViewControllerDataSource {
     }
 
     required init(coder aDecoder: NSCoder) {
-        return super.init(coder: aDecoder)
+        super.init(coder: aDecoder)
     }
 
     //MARK -
@@ -46,6 +46,6 @@ class FTUEViewController: UIPageViewController, UIPageViewControllerDataSource {
     }
 
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return vcs.indexOf(viewControllers[0] as UIViewController)!
+        return vcs.indexOf(viewControllers[0] as! UIViewController)!
     }
 }

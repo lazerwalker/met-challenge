@@ -25,7 +25,7 @@ class MapViewController : UIViewController, UIScrollViewDelegate {
 
     // MARK - Constructors
     init(floor: MapFloor) {
-        super.init()
+        super.init(nibName: nil, bundle: nil)
         self.floor = floor
     }
 

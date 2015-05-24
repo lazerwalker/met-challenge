@@ -17,7 +17,7 @@ class Floor {
         }
 
         let name = json["name"].string!
-        let map = MapFloor.fromRaw(json["map"].string!)!
+        let map = MapFloor(rawValue: json["map"].string!)!
         let wingDicts:[JSONValue] = json["wings"].array!
 
         var wings = wingDicts
